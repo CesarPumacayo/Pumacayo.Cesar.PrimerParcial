@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entidades.Fanta">
+    <Position X="6.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAQQAAAMAAAABAEAAAAQA=</HashCode>
+      <FileName>Fanta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Gaseosa">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEBAAAAAQAEgAQAAAAQAAAAEIAAAABAEAAAAiA=</HashCode>
+      <FileName>Gaseosas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.InventarioGaseosas&lt;T&gt;">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAACgwAEAgAAAAAAAMIAAEAAAABAAAiA=</HashCode>
+      <FileName>InventarioGaseosas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Sprite">
+    <Position X="8" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAAEgAAgAAAAIAAAAIAAAABAEAAAAAA=</HashCode>
+      <FileName>Sprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Manaos">
+    <Position X="9.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAEgAAEAAAAAAAAAIAAAABQEAAAEAA=</HashCode>
+      <FileName>Manaos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EtipoBotella">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAIAAAA=</HashCode>
+      <FileName>Enumerado.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EtipoSabor">
+    <Position X="9.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAABAAAAAEAAACAAAAgAAAAAAAAAAAAADAAAAAAA=</HashCode>
+      <FileName>Enumerado.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

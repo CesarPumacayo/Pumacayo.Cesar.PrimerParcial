@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Interfaz.FormsGaseosas.FrmFanta">
+    <Position X="4.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAARCAAABgAAACAAAACAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>FormsGaseosas\FrmFanta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.FormsGaseosas.FrmGaseosa">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQADAAAJgABACAAAECAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormsGaseosas\FrmGaseosa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.FormsGaseosas.FrmManaos">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABhAAACAACACAAAgEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormsGaseosas\FrmManaos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.FormsGaseosas.FrmSprite">
+    <Position X="8" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAAABgAAACAABACAAAAAAAAAAAAAAEACAA=</HashCode>
+      <FileName>FormsGaseosas\FrmSprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.FrmCRUD">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>F0RGQwCBRGAAoDgQQACARIACJADIAAAIAgoAAAgAIAA=</HashCode>
+      <FileName>FrmCRUD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.FrmLogin">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAACACAABAgABACAAAQCAAAAAQYCACAAEAAAAAE=</HashCode>
+      <FileName>FrmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.FrmSesiones">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAAAAAAACAAAACAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>FrmSesiones.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

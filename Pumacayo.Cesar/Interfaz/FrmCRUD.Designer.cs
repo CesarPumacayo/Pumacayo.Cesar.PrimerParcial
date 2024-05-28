@@ -215,7 +215,7 @@
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "FrmCRUD";
-            Text = "FrmCRUD";
+            Text = "CRUD";
             FormClosing += FrmCRUD_Cerrar;
             Load += FrmCRUD_Load;
             menuStrip1.ResumeLayout(false);
