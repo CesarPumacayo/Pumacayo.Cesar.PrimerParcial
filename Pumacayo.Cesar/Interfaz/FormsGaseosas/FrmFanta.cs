@@ -11,16 +11,27 @@ using System.Windows.Forms;
 
 namespace Interfaz.FormsGaseosas
 {
+    /// <summary>
+    /// Clase derivada de FrmGaseosa
+    /// </summary>
     public partial class FrmFanta : FrmGaseosa
     {
         private Fanta? miFanta;
 
         #region Propiedades
+        /// <summary>
+        /// Obtiene la instancia de la clase Fanta asociada al formulario.
+        /// </summary>
         public Fanta? MiFanta
         {
             get { return this.miFanta; }
         }
         #endregion
+
+
+        /// <summary>
+        /// FrmFanta inicializa una nueva instancia , agrega lista de tipo de botella al combobox y deja un valor predeterminado 
+        /// </summary>
         public FrmFanta()
         {
             InitializeComponent();
@@ -30,6 +41,11 @@ namespace Interfaz.FormsGaseosas
             }
             this.cboBotella.SelectedItem = EtipoBotella.Plastico;
         }
+
+        /// <summary>
+        /// Inicializa una nueva instancia con datos del objeto Gaseosa
+        /// </summary>
+        /// <param name="g">Datos de la gaseosa que muestra el formulario</param>
         public FrmFanta(Gaseosa g) : this()
         {
             this.txtPrecio.Text = g.Precio.ToString();
@@ -39,6 +55,11 @@ namespace Interfaz.FormsGaseosas
             this.checkAzucar.Checked = ((Fanta)g).ExcesoAzucar;
 
         }
+        /// <summary>
+        /// Manejador de eventos heredada con el click del boton "Aceptar" y carga los datos ingresados al objeto Fanta.
+        /// </summary>
+        /// <param name="sender">Objeto que genera el evento</param>
+        /// <param name="e">Argumentos del evento</param>
         protected override void btnAceptar_Click(object sender, EventArgs e)
         {
 

@@ -17,6 +17,10 @@ namespace Interfaz
             InitializeComponent();
             CargarLog();
         }
+
+        /// <summary>
+        /// El metodo lee por completo todas las lineas y lo va agregando linea por linea a la listBox
+        /// </summary>
         private void CargarLog()
         {
             string logPath = @"..\..\..\usuarios.log";

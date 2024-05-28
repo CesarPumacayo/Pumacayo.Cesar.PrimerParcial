@@ -16,6 +16,9 @@ namespace Interfaz.FormsGaseosas
         private Sprite? miSprite;
 
         #region Propiedades
+        /// <summary>
+        /// Obtiene (Lectura) la instancia de la clase Sprite asociada al formulario.
+        /// </summary>
         public Sprite? MiSprite
         {
             get { return this.miSprite; }
@@ -33,6 +36,10 @@ namespace Interfaz.FormsGaseosas
             this.cboBotella.SelectedItem = EtipoBotella.Plastico;
 
         }
+        /// <summary>
+        /// Inicializa una nueva instancia con datos del objeto Gaseosa
+        /// </summary>
+        /// <param name="g">Datos de la gaseosa que muestra el formulario</param>
         public FrmSprite(Gaseosa g) : this()
         {
             this.txtPrecio.Text = g.Precio.ToString();
@@ -43,7 +50,11 @@ namespace Interfaz.FormsGaseosas
 
 
         }
-
+        /// <summary>
+        /// Manejador de eventos heredada con el click del boton "Aceptar" y carga los datos ingresados al objeto Sprite.
+        /// </summary>
+        /// <param name="sender">Objeto que genera el evento</param>
+        /// <param name="e">Argumentos del evento</param>
         protected override void btnAceptar_Click(object sender, EventArgs e)
         {
             try

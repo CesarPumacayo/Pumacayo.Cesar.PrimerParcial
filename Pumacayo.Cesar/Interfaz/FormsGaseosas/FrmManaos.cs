@@ -14,7 +14,11 @@ namespace Interfaz.FormsGaseosas
     public partial class FrmManaos : FrmGaseosa
     {
         private Manaos? miManaos;
-        #region 
+
+        #region Propiedades
+        /// <summary>
+        /// Obtiene (Lectura) la instancia de la clase Manaos asociada al formulario.
+        /// </summary>
         public Manaos? MiManaos
         {
             get { return this.miManaos; }
@@ -34,6 +38,11 @@ namespace Interfaz.FormsGaseosas
             this.cboSabor.SelectedItem = EtipoSabor.Cola;
             this.cboBotella.SelectedItem = EtipoBotella.Plastico;
         }
+
+        /// <summary>
+        /// Inicializa una nueva instancia con datos del objeto Gaseosa
+        /// </summary>
+        /// <param name="g">Datos de la gaseosa que muestra el formulario</param>
         public FrmManaos(Gaseosa g) : this()
         {
             this.txtPrecio.Text = g.Precio.ToString();
@@ -43,6 +52,11 @@ namespace Interfaz.FormsGaseosas
             this.checkCalorias.Checked = ((Manaos)g).ExcesoCalorias;
 
         }
+        /// <summary>
+        /// El metodo maneja los eventos heredadas con el click del boton "Aceptar" y carga los datos ingresados al objeto Sprite.
+        /// </summary>
+        /// <param name="sender">Objeto que genera el evento</param>
+        /// <param name="e">Argumentos del evento</param>
         protected override void btnAceptar_Click(object sender, EventArgs e)
         {
             try
