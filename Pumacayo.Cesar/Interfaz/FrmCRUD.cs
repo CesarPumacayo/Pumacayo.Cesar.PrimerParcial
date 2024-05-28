@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
@@ -216,6 +217,110 @@ namespace Interfaz
 
 
 
+        }
+
+        private void btnAbrirArchivo_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrirArchivo = new OpenFileDialog();
+            abrirArchivo.Filter = "Archivos JSON(*.json)|*.json";
+
+            if (abrirArchivo.ShowDialog() == DialogResult.OK)
+            {
+                string path = abrirArchivo.FileName;
+
+                try
+                {
+                    string jsonString = File.ReadAllText(path);
+
+                    var jsonSerializerOptions = new JsonSerializerOptions
+                    {
+                        Converters = { new GaseosaConverter() }
+                    };
+
+                    var deserializedFabrica = JsonSerializer.Deserialize<InventarioGaseosas<Gaseosa>>(jsonString, jsonSerializerOptions);
+
+                    if (deserializedFabrica != null)
+                    {
+                        this.fabrica = deserializedFabrica;
+                        this.ActualizarVisor();
+                        MessageBox.Show("Archivo cargado exitosamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El archivo JSON no es válido o está vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al cargar el archivo JSON: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnGuardarArchivo_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog archivoGuardado = new SaveFileDialog();
+            archivoGuardado.Filter = "Archivos JSON(*.json)|*.json";
+
+            if (archivoGuardado.ShowDialog() == DialogResult.OK)
+            {
+                string path = archivoGuardado.FileName;
+
+                try
+                {
+                    var jsonSerializerOptions = new JsonSerializerOptions
+                    {
+                        WriteIndented = true,
+                        Converters = { new GaseosaConverter() }
+                    };
+
+                    string jsonString = JsonSerializer.Serialize(this.fabrica, jsonSerializerOptions);
+
+                    File.WriteAllText(path, jsonString);
+
+                    MessageBox.Show("Archivo guardado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al guardar el archivo JSON: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void ascendentePrecio_Click(object sender, EventArgs e)
+        {
+            if (fabrica.ListaGaseosas != null)
+            {
+                this.fabrica.ListaGaseosas.Sort(InventarioGaseosas<Gaseosa>.OrdenarPorPrecioAscendente);
+                this.ActualizarVisor();
+            }
+        }
+
+        private void descendentePrecio_Click(object sender, EventArgs e)
+        {
+            if(fabrica.ListaGaseosas != null)
+            {
+                this.fabrica.ListaGaseosas.Sort(InventarioGaseosas<Gaseosa>.OrdenarPorPrecioDescendente);
+                this.ActualizarVisor();
+            }
+        }
+
+        private void ascendenteCantidad_Click(object sender, EventArgs e)
+        {
+            if (fabrica.ListaGaseosas != null)
+            {
+                this.fabrica.ListaGaseosas.Sort(InventarioGaseosas<Gaseosa>.OrdenarPorCantidadAscendente);
+                this.ActualizarVisor();
+            }
+        }
+
+        private void descendenteCantidad_Click(object sender, EventArgs e)
+        {
+            if (fabrica.ListaGaseosas != null)
+            {
+                this.fabrica.ListaGaseosas.Sort(InventarioGaseosas<Gaseosa>.OrdenarPorCantidadDescendente);
+                this.ActualizarVisor();
+            }
         }
     }
 }

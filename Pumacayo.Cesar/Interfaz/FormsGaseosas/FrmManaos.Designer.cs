@@ -73,7 +73,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(728, 455);
             Controls.Add(cboSabor);
             Controls.Add(label4);
             Controls.Add(label5);

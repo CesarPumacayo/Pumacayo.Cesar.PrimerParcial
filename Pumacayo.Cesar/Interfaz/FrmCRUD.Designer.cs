@@ -37,7 +37,17 @@
             modificarToolStripMenuItem = new ToolStripMenuItem();
             eliminarToolStripMenuItem = new ToolStripMenuItem();
             ordenarToolStripMenuItem = new ToolStripMenuItem();
+            precioToolStripMenuItem = new ToolStripMenuItem();
+            ascendenteToolStripMenuItem1 = new ToolStripMenuItem();
+            descendenteToolStripMenuItem1 = new ToolStripMenuItem();
+            cantidadToolStripMenuItem = new ToolStripMenuItem();
+            ascendenteToolStripMenuItem = new ToolStripMenuItem();
+            descendenteToolStripMenuItem = new ToolStripMenuItem();
             historialToolStripMenuItem = new ToolStripMenuItem();
+            btnAbrirArchivo = new Button();
+            button1 = new Button();
+            saveFileDialog1 = new SaveFileDialog();
+            openFileDialog1 = new OpenFileDialog();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +57,7 @@
             listVisor.ItemHeight = 15;
             listVisor.Location = new Point(49, 35);
             listVisor.Name = "listVisor";
-            listVisor.Size = new Size(682, 409);
+            listVisor.Size = new Size(544, 409);
             listVisor.TabIndex = 5;
             // 
             // menuStrip1
@@ -69,21 +79,21 @@
             // fantaToolStripMenuItem
             // 
             fantaToolStripMenuItem.Name = "fantaToolStripMenuItem";
-            fantaToolStripMenuItem.Size = new Size(180, 22);
+            fantaToolStripMenuItem.Size = new Size(116, 22);
             fantaToolStripMenuItem.Text = "Fanta";
             fantaToolStripMenuItem.Click += fantaToolStripMenuItem_Click;
             // 
             // manaosToolStripMenuItem
             // 
             manaosToolStripMenuItem.Name = "manaosToolStripMenuItem";
-            manaosToolStripMenuItem.Size = new Size(180, 22);
+            manaosToolStripMenuItem.Size = new Size(116, 22);
             manaosToolStripMenuItem.Text = "Manaos";
             manaosToolStripMenuItem.Click += manaosToolStripMenuItem_Click;
             // 
             // spriteToolStripMenuItem
             // 
             spriteToolStripMenuItem.Name = "spriteToolStripMenuItem";
-            spriteToolStripMenuItem.Size = new Size(180, 22);
+            spriteToolStripMenuItem.Size = new Size(116, 22);
             spriteToolStripMenuItem.Text = "Sprite";
             spriteToolStripMenuItem.Click += spriteToolStripMenuItem_Click;
             // 
@@ -103,9 +113,52 @@
             // 
             // ordenarToolStripMenuItem
             // 
+            ordenarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { precioToolStripMenuItem, cantidadToolStripMenuItem });
             ordenarToolStripMenuItem.Name = "ordenarToolStripMenuItem";
             ordenarToolStripMenuItem.Size = new Size(62, 20);
             ordenarToolStripMenuItem.Text = "Ordenar";
+            // 
+            // precioToolStripMenuItem
+            // 
+            precioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ascendenteToolStripMenuItem1, descendenteToolStripMenuItem1 });
+            precioToolStripMenuItem.Name = "precioToolStripMenuItem";
+            precioToolStripMenuItem.Size = new Size(180, 22);
+            precioToolStripMenuItem.Text = "Precio";
+            // 
+            // ascendenteToolStripMenuItem1
+            // 
+            ascendenteToolStripMenuItem1.Name = "ascendenteToolStripMenuItem1";
+            ascendenteToolStripMenuItem1.Size = new Size(180, 22);
+            ascendenteToolStripMenuItem1.Text = "Ascendente";
+            ascendenteToolStripMenuItem1.Click += ascendentePrecio_Click;
+            // 
+            // descendenteToolStripMenuItem1
+            // 
+            descendenteToolStripMenuItem1.Name = "descendenteToolStripMenuItem1";
+            descendenteToolStripMenuItem1.Size = new Size(180, 22);
+            descendenteToolStripMenuItem1.Text = "Descendente";
+            descendenteToolStripMenuItem1.Click += descendentePrecio_Click;
+            // 
+            // cantidadToolStripMenuItem
+            // 
+            cantidadToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ascendenteToolStripMenuItem, descendenteToolStripMenuItem });
+            cantidadToolStripMenuItem.Name = "cantidadToolStripMenuItem";
+            cantidadToolStripMenuItem.Size = new Size(180, 22);
+            cantidadToolStripMenuItem.Text = "Cantidad";
+            // 
+            // ascendenteToolStripMenuItem
+            // 
+            ascendenteToolStripMenuItem.Name = "ascendenteToolStripMenuItem";
+            ascendenteToolStripMenuItem.Size = new Size(180, 22);
+            ascendenteToolStripMenuItem.Text = "Ascendente";
+            ascendenteToolStripMenuItem.Click += ascendenteCantidad_Click;
+            // 
+            // descendenteToolStripMenuItem
+            // 
+            descendenteToolStripMenuItem.Name = "descendenteToolStripMenuItem";
+            descendenteToolStripMenuItem.Size = new Size(180, 22);
+            descendenteToolStripMenuItem.Text = "Descendente";
+            descendenteToolStripMenuItem.Click += descendenteCantidad_Click;
             // 
             // historialToolStripMenuItem
             // 
@@ -113,17 +166,46 @@
             historialToolStripMenuItem.Size = new Size(113, 20);
             historialToolStripMenuItem.Text = " Historial sesiones";
             // 
+            // btnAbrirArchivo
+            // 
+            btnAbrirArchivo.Location = new Point(681, 35);
+            btnAbrirArchivo.Name = "btnAbrirArchivo";
+            btnAbrirArchivo.Size = new Size(75, 49);
+            btnAbrirArchivo.TabIndex = 8;
+            btnAbrirArchivo.Text = "Abrir";
+            btnAbrirArchivo.UseVisualStyleBackColor = true;
+            btnAbrirArchivo.Click += btnAbrirArchivo_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(681, 393);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 51);
+            button1.TabIndex = 7;
+            button1.Text = "Guardar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += btnGuardarArchivo_Click;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FrmCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.wallpaperflare_com_wallpaper__5_;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 470);
+            Controls.Add(btnAbrirArchivo);
+            Controls.Add(button1);
             Controls.Add(listVisor);
             Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "FrmCRUD";
             Text = "FrmCRUD";
+            FormClosing += FrmCRUD_Cerrar;
+            Load += FrmCRUD_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -142,5 +224,15 @@
         private ToolStripMenuItem eliminarToolStripMenuItem;
         private ToolStripMenuItem ordenarToolStripMenuItem;
         private ToolStripMenuItem historialToolStripMenuItem;
+        private Button btnAbrirArchivo;
+        private Button button1;
+        private SaveFileDialog saveFileDialog1;
+        private OpenFileDialog openFileDialog1;
+        private ToolStripMenuItem precioToolStripMenuItem;
+        private ToolStripMenuItem ascendenteToolStripMenuItem1;
+        private ToolStripMenuItem descendenteToolStripMenuItem1;
+        private ToolStripMenuItem cantidadToolStripMenuItem;
+        private ToolStripMenuItem ascendenteToolStripMenuItem;
+        private ToolStripMenuItem descendenteToolStripMenuItem;
     }
 }
