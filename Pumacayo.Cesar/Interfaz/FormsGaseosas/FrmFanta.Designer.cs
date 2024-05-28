@@ -37,7 +37,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(432, 158);
+            label5.Location = new Point(242, 150);
             label5.Name = "label5";
             label5.Size = new Size(99, 15);
             label5.TabIndex = 20;
@@ -46,7 +46,7 @@
             // checkAzucar
             // 
             checkAzucar.AutoSize = true;
-            checkAzucar.Location = new Point(538, 158);
+            checkAzucar.Location = new Point(348, 150);
             checkAzucar.Name = "checkAzucar";
             checkAzucar.Size = new Size(15, 14);
             checkAzucar.TabIndex = 19;
@@ -54,7 +54,7 @@
             // 
             // txtLitros
             // 
-            txtLitros.Location = new Point(432, 92);
+            txtLitros.Location = new Point(242, 84);
             txtLitros.Name = "txtLitros";
             txtLitros.Size = new Size(121, 23);
             txtLitros.TabIndex = 18;
@@ -62,7 +62,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(432, 74);
+            label4.Location = new Point(242, 66);
             label4.Name = "label4";
             label4.Size = new Size(36, 15);
             label4.TabIndex = 17;
@@ -72,11 +72,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(399, 370);
             Controls.Add(label5);
             Controls.Add(checkAzucar);
             Controls.Add(txtLitros);
             Controls.Add(label4);
+            Location = new Point(0, 0);
             Name = "FrmFanta";
             Text = "FrmFanta";
             Controls.SetChildIndex(label4, 0);

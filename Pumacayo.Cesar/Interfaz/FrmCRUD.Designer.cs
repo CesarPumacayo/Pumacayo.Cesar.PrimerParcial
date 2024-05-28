@@ -48,6 +48,7 @@
             button1 = new Button();
             saveFileDialog1 = new SaveFileDialog();
             openFileDialog1 = new OpenFileDialog();
+            label1 = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -55,9 +56,9 @@
             // 
             listVisor.FormattingEnabled = true;
             listVisor.ItemHeight = 15;
-            listVisor.Location = new Point(49, 35);
+            listVisor.Location = new Point(31, 64);
             listVisor.Name = "listVisor";
-            listVisor.Size = new Size(544, 409);
+            listVisor.Size = new Size(544, 514);
             listVisor.TabIndex = 5;
             // 
             // menuStrip1
@@ -65,7 +66,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { agregarToolStripMenuItem, modificarToolStripMenuItem, eliminarToolStripMenuItem, ordenarToolStripMenuItem, historialToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(1166, 24);
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -122,20 +123,20 @@
             // 
             precioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ascendenteToolStripMenuItem1, descendenteToolStripMenuItem1 });
             precioToolStripMenuItem.Name = "precioToolStripMenuItem";
-            precioToolStripMenuItem.Size = new Size(180, 22);
+            precioToolStripMenuItem.Size = new Size(122, 22);
             precioToolStripMenuItem.Text = "Precio";
             // 
             // ascendenteToolStripMenuItem1
             // 
             ascendenteToolStripMenuItem1.Name = "ascendenteToolStripMenuItem1";
-            ascendenteToolStripMenuItem1.Size = new Size(180, 22);
+            ascendenteToolStripMenuItem1.Size = new Size(142, 22);
             ascendenteToolStripMenuItem1.Text = "Ascendente";
             ascendenteToolStripMenuItem1.Click += ascendentePrecio_Click;
             // 
             // descendenteToolStripMenuItem1
             // 
             descendenteToolStripMenuItem1.Name = "descendenteToolStripMenuItem1";
-            descendenteToolStripMenuItem1.Size = new Size(180, 22);
+            descendenteToolStripMenuItem1.Size = new Size(142, 22);
             descendenteToolStripMenuItem1.Text = "Descendente";
             descendenteToolStripMenuItem1.Click += descendentePrecio_Click;
             // 
@@ -143,20 +144,20 @@
             // 
             cantidadToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ascendenteToolStripMenuItem, descendenteToolStripMenuItem });
             cantidadToolStripMenuItem.Name = "cantidadToolStripMenuItem";
-            cantidadToolStripMenuItem.Size = new Size(180, 22);
+            cantidadToolStripMenuItem.Size = new Size(122, 22);
             cantidadToolStripMenuItem.Text = "Cantidad";
             // 
             // ascendenteToolStripMenuItem
             // 
             ascendenteToolStripMenuItem.Name = "ascendenteToolStripMenuItem";
-            ascendenteToolStripMenuItem.Size = new Size(180, 22);
+            ascendenteToolStripMenuItem.Size = new Size(142, 22);
             ascendenteToolStripMenuItem.Text = "Ascendente";
             ascendenteToolStripMenuItem.Click += ascendenteCantidad_Click;
             // 
             // descendenteToolStripMenuItem
             // 
             descendenteToolStripMenuItem.Name = "descendenteToolStripMenuItem";
-            descendenteToolStripMenuItem.Size = new Size(180, 22);
+            descendenteToolStripMenuItem.Size = new Size(142, 22);
             descendenteToolStripMenuItem.Text = "Descendente";
             descendenteToolStripMenuItem.Click += descendenteCantidad_Click;
             // 
@@ -165,10 +166,11 @@
             historialToolStripMenuItem.Name = "historialToolStripMenuItem";
             historialToolStripMenuItem.Size = new Size(113, 20);
             historialToolStripMenuItem.Text = " Historial sesiones";
+            historialToolStripMenuItem.Click += historialToolStripMenuItem_Click;
             // 
             // btnAbrirArchivo
             // 
-            btnAbrirArchivo.Location = new Point(681, 35);
+            btnAbrirArchivo.Location = new Point(1064, 529);
             btnAbrirArchivo.Name = "btnAbrirArchivo";
             btnAbrirArchivo.Size = new Size(75, 49);
             btnAbrirArchivo.TabIndex = 8;
@@ -178,7 +180,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(681, 393);
+            button1.Location = new Point(624, 527);
             button1.Name = "button1";
             button1.Size = new Size(75, 51);
             button1.TabIndex = 7;
@@ -190,17 +192,27 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(31, 35);
+            label1.Name = "label1";
+            label1.Size = new Size(76, 15);
+            label1.TabIndex = 9;
+            label1.Text = "Cant. max : 5";
+            // 
             // FrmCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.wallpaperflare_com_wallpaper__5_;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 470);
+            ClientSize = new Size(1166, 592);
+            Controls.Add(label1);
             Controls.Add(btnAbrirArchivo);
             Controls.Add(button1);
             Controls.Add(listVisor);
             Controls.Add(menuStrip1);
+            IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "FrmCRUD";
             Text = "FrmCRUD";
@@ -234,5 +246,6 @@
         private ToolStripMenuItem cantidadToolStripMenuItem;
         private ToolStripMenuItem ascendenteToolStripMenuItem;
         private ToolStripMenuItem descendenteToolStripMenuItem;
+        private Label label1;
     }
 }

@@ -10,10 +10,8 @@ namespace Interfaz
         {
             int cantidad_intentos = 0;
 
-            //CREO UNA INSTANCIA DEL FORMULARIO DE INICIO
             FrmLogin frm = new FrmLogin();
 
-            //INDICO LA POSICION EN LA PANTALLA
             frm.StartPosition = FormStartPosition.CenterScreen;
             try
             {
@@ -42,7 +40,6 @@ namespace Interfaz
 
                 } while (cantidad_intentos < 3 && frm.DialogResult != DialogResult.Cancel);
 
-                //INDICO LA POSICION EN LA PANTALLA
                 if (frm.UsuarioDelForm != null)
                 {
 
@@ -50,7 +47,6 @@ namespace Interfaz
                     frmAplicacion.StartPosition = FormStartPosition.CenterScreen;
 
 
-                    //INICIO LA APLICACION
                     Application.Run(frmAplicacion);
                 }
             }
@@ -60,7 +56,7 @@ namespace Interfaz
             }
             finally
             {
-                MessageBox.Show("La aplicación terminó.", "FIN DEL EJEMPLO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La aplicación terminó.", "FIN DE LA APLICACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }

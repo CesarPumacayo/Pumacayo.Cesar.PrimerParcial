@@ -1,5 +1,12 @@
-﻿namespace Entidades
+﻿using System.Xml.Serialization;
+
+namespace Entidades
 {
+    [Serializable]
+    [XmlInclude(typeof(Fanta))]
+    [XmlInclude(typeof(Manaos))]
+    [XmlInclude(typeof(Sprite))]
+
     public abstract class Gaseosa
     {
         private EtipoBotella tipoBotella;

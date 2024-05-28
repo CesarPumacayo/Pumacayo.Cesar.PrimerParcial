@@ -40,7 +40,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(176, 296);
+            btnCancelar.Location = new Point(49, 283);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(100, 50);
             btnCancelar.TabIndex = 16;
@@ -50,7 +50,7 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(431, 296);
+            btnAceptar.Location = new Point(251, 283);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(100, 50);
             btnAceptar.TabIndex = 15;
@@ -60,14 +60,14 @@
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(176, 87);
+            txtPrecio.Location = new Point(49, 74);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(121, 23);
             txtPrecio.TabIndex = 14;
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(176, 150);
+            txtCantidad.Location = new Point(49, 137);
             txtCantidad.Name = "txtCantidad";
             txtCantidad.Size = new Size(121, 23);
             txtCantidad.TabIndex = 13;
@@ -75,7 +75,7 @@
             // cboBotella
             // 
             cboBotella.FormattingEnabled = true;
-            cboBotella.Location = new Point(176, 222);
+            cboBotella.Location = new Point(49, 209);
             cboBotella.Name = "cboBotella";
             cboBotella.Size = new Size(121, 23);
             cboBotella.TabIndex = 12;
@@ -83,7 +83,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(176, 132);
+            label3.Location = new Point(49, 119);
             label3.Name = "label3";
             label3.Size = new Size(58, 15);
             label3.TabIndex = 11;
@@ -92,7 +92,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(176, 69);
+            label2.Location = new Point(49, 56);
             label2.Name = "label2";
             label2.Size = new Size(43, 15);
             label2.TabIndex = 10;
@@ -101,7 +101,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(176, 188);
+            label1.Location = new Point(49, 175);
             label1.Name = "label1";
             label1.Size = new Size(46, 15);
             label1.TabIndex = 9;

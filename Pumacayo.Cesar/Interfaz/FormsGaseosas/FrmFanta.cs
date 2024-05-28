@@ -41,6 +41,7 @@ namespace Interfaz.FormsGaseosas
         }
         protected override void btnAceptar_Click(object sender, EventArgs e)
         {
+
             try
             {
                 EtipoBotella tipoBotella = (EtipoBotella)base.cboBotella.SelectedItem;
@@ -52,6 +53,8 @@ namespace Interfaz.FormsGaseosas
 
                 this.miFanta = new Fanta(tipoBotella, precio, cantidad, litros, excesoAzucar);
 
+                this.DialogResult = DialogResult.OK; // Asegúrate de establecer el resultado del diálogo aquí
+
                 base.btnAceptar_Click(sender, e);
             }
             catch (Exception ex)
@@ -59,5 +62,6 @@ namespace Interfaz.FormsGaseosas
                 MessageBox.Show("Por favor, asegúrese de que todos los campos numéricos tengan un formato válido.\n" + ex.Message, "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

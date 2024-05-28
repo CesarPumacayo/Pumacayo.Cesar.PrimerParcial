@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InventarioGaseosasOfGaseosa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListaGaseosas>
+    <Gaseosa xsi:type="Sprite">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>111</Precio>
+      <Cantidad>11</Cantidad>
+      <EsRetornable>true</EsRetornable>
+      <Codigo>1</Codigo>
+    </Gaseosa>
+    <Gaseosa xsi:type="Manaos">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>23</Precio>
+      <Cantidad>23</Cantidad>
+      <TipoSabor>Naranja</TipoSabor>
+      <ExcesoCalorias>true</ExcesoCalorias>
+    </Gaseosa>
+    <Gaseosa xsi:type="Fanta">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>3</Precio>
+      <Cantidad>2</Cantidad>
+      <ExcesoAzucar>true</ExcesoAzucar>
+      <Litros>2222.6</Litros>
+    </Gaseosa>
+  </ListaGaseosas>
+  <CantMaxGaseosas>5</CantMaxGaseosas>
+</InventarioGaseosasOfGaseosa>

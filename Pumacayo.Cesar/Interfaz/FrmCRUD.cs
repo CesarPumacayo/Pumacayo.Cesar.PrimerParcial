@@ -8,8 +8,10 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 using Entidades;
 using Interfaz.FormsGaseosas;
+using Microsoft.VisualBasic.Logging;
 
 namespace Interfaz
 {
@@ -21,13 +23,13 @@ namespace Interfaz
         public FrmCRUD()
         {
             InitializeComponent();
-            this.fabrica = new InventarioGaseosas<Gaseosa>(5);//cantidad maxima
+            this.fabrica = new InventarioGaseosas<Gaseosa>(5);
 
         }
         public FrmCRUD(Usuario usuario) : this()
         {
-            MessageBox.Show($"Bienvenido {usuario.nombre}");
-            this.Text = "Bienvenido, " + usuario.nombre + "                    Fecha actual: " + DateTime.Today.ToString("dd/MM/yyyy");
+            MessageBox.Show($"¡Bienvenido {usuario.nombre}!", "Login exitoso.");
+            this.Text = $"Bienvenido, { usuario.nombre} {usuario.apellido}                                 Fecha actual: " + DateTime.Today.ToString("dd/MM/yyyy");
         }
 
         private void FrmCRUD_Load(object sender, EventArgs e)
@@ -62,6 +64,7 @@ namespace Interfaz
 
         private void fantaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+    
             FrmFanta frmFanta = new FrmFanta();
             frmFanta.ShowDialog();
             if (frmFanta.DialogResult == DialogResult.OK)
@@ -210,81 +213,28 @@ namespace Interfaz
                 }
             }
 
-
-
-
-
-
-
-
         }
 
         private void btnAbrirArchivo_Click(object sender, EventArgs e)
         {
-            OpenFileDialog abrirArchivo = new OpenFileDialog();
-            abrirArchivo.Filter = "Archivos JSON(*.json)|*.json";
-
-            if (abrirArchivo.ShowDialog() == DialogResult.OK)
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivo XML (*.xml)|*.xml";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string path = abrirArchivo.FileName;
-
-                try
-                {
-                    string jsonString = File.ReadAllText(path);
-
-                    var jsonSerializerOptions = new JsonSerializerOptions
-                    {
-                        Converters = { new GaseosaConverter() }
-                    };
-
-                    var deserializedFabrica = JsonSerializer.Deserialize<InventarioGaseosas<Gaseosa>>(jsonString, jsonSerializerOptions);
-
-                    if (deserializedFabrica != null)
-                    {
-                        this.fabrica = deserializedFabrica;
-                        this.ActualizarVisor();
-                        MessageBox.Show("Archivo cargado exitosamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show("El archivo JSON no es válido o está vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error al cargar el archivo JSON: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                DeserializeCollection(openFileDialog.FileName);
+                this.ActualizarVisor();
             }
         }
 
         private void btnGuardarArchivo_Click(object sender, EventArgs e)
         {
-            SaveFileDialog archivoGuardado = new SaveFileDialog();
-            archivoGuardado.Filter = "Archivos JSON(*.json)|*.json";
-
-            if (archivoGuardado.ShowDialog() == DialogResult.OK)
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Archivo XML (*.xml)|*.xml";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string path = archivoGuardado.FileName;
-
-                try
-                {
-                    var jsonSerializerOptions = new JsonSerializerOptions
-                    {
-                        WriteIndented = true,
-                        Converters = { new GaseosaConverter() }
-                    };
-
-                    string jsonString = JsonSerializer.Serialize(this.fabrica, jsonSerializerOptions);
-
-                    File.WriteAllText(path, jsonString);
-
-                    MessageBox.Show("Archivo guardado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error al guardar el archivo JSON: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                SerializeCollection(saveFileDialog.FileName);
             }
+
         }
 
         private void ascendentePrecio_Click(object sender, EventArgs e)
@@ -298,7 +248,7 @@ namespace Interfaz
 
         private void descendentePrecio_Click(object sender, EventArgs e)
         {
-            if(fabrica.ListaGaseosas != null)
+            if (fabrica.ListaGaseosas != null)
             {
                 this.fabrica.ListaGaseosas.Sort(InventarioGaseosas<Gaseosa>.OrdenarPorPrecioDescendente);
                 this.ActualizarVisor();
@@ -322,5 +272,72 @@ namespace Interfaz
                 this.ActualizarVisor();
             }
         }
+
+        private void historialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSesiones frmSesiones = new FrmSesiones();
+            frmSesiones.MdiParent = this;
+            frmSesiones.Show();
+        }
+
+
+
+        private void SerializeCollection(string filePath)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(InventarioGaseosas<Gaseosa>));
+                using (FileStream stream = File.Create(filePath))
+                {
+                    serializer.Serialize(stream, fabrica);
+                }
+                MessageBox.Show("La colección se ha serializado correctamente.", "Serialización Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al serializar la colección: " + ex.Message, "Error de Serialización", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void DeserializeCollection(string filePath)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(InventarioGaseosas<Gaseosa>));
+                using (FileStream stream = File.OpenRead(filePath))
+                {
+                    var deserializedObject = serializer.Deserialize(stream) as InventarioGaseosas<Gaseosa>;
+
+                    if (deserializedObject != null)
+                    {
+                        fabrica = deserializedObject;
+                    }
+                }
+                MessageBox.Show("La colección se ha deserializado correctamente.", "Deserialización Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al deserializar la colección: " + ex.Message, "Error de Deserialización", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

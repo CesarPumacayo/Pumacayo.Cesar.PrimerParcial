@@ -25,3 +25,4 @@ C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.pdb
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.genruntimeconfig.cache
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\ref\Interfaz.dll
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FrmSesiones.resources
