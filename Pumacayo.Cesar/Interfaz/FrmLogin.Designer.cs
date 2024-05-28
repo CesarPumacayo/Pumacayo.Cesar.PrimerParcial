@@ -47,6 +47,7 @@
             btnSalir.TabIndex = 21;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnAceptar
             // 
@@ -58,6 +59,7 @@
             btnAceptar.TabIndex = 20;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // labelContraseña
             // 

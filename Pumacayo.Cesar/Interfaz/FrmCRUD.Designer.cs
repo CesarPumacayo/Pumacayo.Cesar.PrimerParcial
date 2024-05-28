@@ -69,32 +69,37 @@
             // fantaToolStripMenuItem
             // 
             fantaToolStripMenuItem.Name = "fantaToolStripMenuItem";
-            fantaToolStripMenuItem.Size = new Size(116, 22);
+            fantaToolStripMenuItem.Size = new Size(180, 22);
             fantaToolStripMenuItem.Text = "Fanta";
+            fantaToolStripMenuItem.Click += fantaToolStripMenuItem_Click;
             // 
             // manaosToolStripMenuItem
             // 
             manaosToolStripMenuItem.Name = "manaosToolStripMenuItem";
-            manaosToolStripMenuItem.Size = new Size(116, 22);
+            manaosToolStripMenuItem.Size = new Size(180, 22);
             manaosToolStripMenuItem.Text = "Manaos";
+            manaosToolStripMenuItem.Click += manaosToolStripMenuItem_Click;
             // 
             // spriteToolStripMenuItem
             // 
             spriteToolStripMenuItem.Name = "spriteToolStripMenuItem";
-            spriteToolStripMenuItem.Size = new Size(116, 22);
+            spriteToolStripMenuItem.Size = new Size(180, 22);
             spriteToolStripMenuItem.Text = "Sprite";
+            spriteToolStripMenuItem.Click += spriteToolStripMenuItem_Click;
             // 
             // modificarToolStripMenuItem
             // 
             modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             modificarToolStripMenuItem.Size = new Size(70, 20);
             modificarToolStripMenuItem.Text = "Modificar";
+            modificarToolStripMenuItem.Click += modificarToolStripMenuItem_Click;
             // 
             // eliminarToolStripMenuItem
             // 
             eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             eliminarToolStripMenuItem.Size = new Size(62, 20);
             eliminarToolStripMenuItem.Text = "Eliminar";
+            eliminarToolStripMenuItem.Click += eliminarToolStripMenuItem_Click;
             // 
             // ordenarToolStripMenuItem
             // 
