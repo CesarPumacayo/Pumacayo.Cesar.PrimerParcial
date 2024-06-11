@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj": {}
+    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj": {
+    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj",
         "projectName": "Interfaz",
-        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj",
+        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Entidades.csproj"
               }
             }
           }

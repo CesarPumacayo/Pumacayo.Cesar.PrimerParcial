@@ -44,5 +44,6 @@ Una vez logueado, se abre el formulario principal (FrmCRUD) que permite realizar
 --- 
 ### Diagrama de clases
 
-![foto_diagrama](https://github.com/CesarPumacayo/Pumacayo.Cesar.PrimerParcial/assets/98622455/99c97c80-a2bf-4533-8dbe-64a6bfc793eb)
-![foto_diagrama2](https://github.com/CesarPumacayo/Pumacayo.Cesar.PrimerParcial/assets/98622455/34b3aea8-f28a-4763-a9be-78430baf419d)
+![DiagramaCompleto](https://github.com/CesarPumacayo/Pumacayo.Cesar.PrimerParcial/assets/98622455/99b58267-bf32-4e86-a1a4-da9f49126362)
+![DiagramaCompleto2](https://github.com/CesarPumacayo/Pumacayo.Cesar.PrimerParcial/assets/98622455/9de0fe71-d0de-4751-b443-7e3ee197ffe4)
+

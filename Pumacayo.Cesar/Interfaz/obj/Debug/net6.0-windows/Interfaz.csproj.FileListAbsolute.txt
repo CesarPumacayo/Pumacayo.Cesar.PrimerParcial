@@ -26,3 +26,31 @@ C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.genruntimeconfig.cache
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\ref\Interfaz.dll
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FrmSesiones.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\bin\Debug\net6.0-windows\Interfaz.exe
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\bin\Debug\net6.0-windows\Interfaz.deps.json
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\bin\Debug\net6.0-windows\Interfaz.runtimeconfig.json
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\bin\Debug\net6.0-windows\Interfaz.dll
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\bin\Debug\net6.0-windows\Interfaz.pdb
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\bin\Debug\net6.0-windows\Entidades.dll
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\bin\Debug\net6.0-windows\Entidades.pdb
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FormsGaseosas.FrmFanta.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FormsGaseosas.FrmGaseosa.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FormsGaseosas.FrmManaos.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FormsGaseosas.FrmSprite.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FrmCRUD.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FrmLogin.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.FrmSesiones.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.Properties.Resources.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.csproj.GenerateResource.cache
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.AssemblyInfoInputs.cache
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.AssemblyInfo.cs
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.sourcelink.json
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.csproj.Up2Date
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.dll
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\refint\Interfaz.dll
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.pdb
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\Interfaz.genruntimeconfig.cache
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Interfaz\obj\Debug\net6.0-windows\ref\Interfaz.dll
