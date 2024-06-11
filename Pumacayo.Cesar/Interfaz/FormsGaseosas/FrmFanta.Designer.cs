@@ -77,7 +77,6 @@
             Controls.Add(checkAzucar);
             Controls.Add(txtLitros);
             Controls.Add(label4);
-            Location = new Point(0, 0);
             Name = "FrmFanta";
             Text = "FrmFanta";
             Controls.SetChildIndex(label4, 0);

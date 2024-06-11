@@ -74,6 +74,7 @@
             // 
             // cboBotella
             // 
+            cboBotella.DropDownStyle = ComboBoxStyle.DropDownList;
             cboBotella.FormattingEnabled = true;
             cboBotella.Location = new Point(49, 209);
             cboBotella.Name = "cboBotella";

@@ -36,6 +36,7 @@
             // 
             // cboSabor
             // 
+            cboSabor.DropDownStyle = ComboBoxStyle.DropDownList;
             cboSabor.FormattingEnabled = true;
             cboSabor.Location = new Point(223, 74);
             cboSabor.Name = "cboSabor";
