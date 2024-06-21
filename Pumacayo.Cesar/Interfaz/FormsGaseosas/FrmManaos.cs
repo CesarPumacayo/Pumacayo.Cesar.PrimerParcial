@@ -61,6 +61,10 @@ namespace Interfaz.FormsGaseosas
         {
             try
             {
+                if (string.IsNullOrEmpty(this.txtPrecio.Text) || string.IsNullOrEmpty(this.txtCantidad.Text))
+                {
+                    throw new CamposNullMyExpection();
+                }
                 EtipoBotella tipoBotella = (EtipoBotella)base.cboBotella.SelectedItem;
                 int cantidad = int.Parse(base.txtCantidad.Text);
                 double precio = double.Parse(base.txtPrecio.Text);
@@ -68,13 +72,27 @@ namespace Interfaz.FormsGaseosas
                 EtipoSabor tipoSabor = (EtipoSabor)this.cboSabor.SelectedItem;
                 bool excesoCalorias = this.checkCalorias.Checked;
 
+                if (precio == 0 || cantidad == 0)
+                {
+                    throw new CamposZeroMyExpection("Ingrese un número distinto de cero.\n¡Tenga cuidado!");
+
+                }
+
                 this.miManaos = new Manaos(tipoBotella, precio, cantidad, tipoSabor, excesoCalorias);
 
                 base.btnAceptar_Click(sender, e);
             }
-            catch (Exception ex)
+            catch (FormatException ex)
             {
                 MessageBox.Show("Por favor, asegúrese de que todos los campos numéricos tengan un formato válido.\n" + ex.Message, "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (CamposNullMyExpection ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (CamposZeroMyExpection ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

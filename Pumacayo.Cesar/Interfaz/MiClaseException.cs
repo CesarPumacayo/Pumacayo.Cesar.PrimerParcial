@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Interfaz
 {
-    public class MiClaseException : Exception
+    public class CamposNullMyExpection : Exception
     {
-        public MiClaseException()
-            :base("Mensaje de error")
-        {
-        }
+        public CamposNullMyExpection() : base("Hay campos vacios.") { }
 
-        public MiClaseException(string mensaje)
-            :base(mensaje) 
-        {
-            
-        }
+    }
+
+    public class CamposZeroMyExpection: Exception
+    {
+        public CamposZeroMyExpection() : base("Error en el campo.") { }
+
+        public CamposZeroMyExpection(string mensaje) : base(mensaje) { }
+
+        public CamposZeroMyExpection(string mensaje, Exception? innerException) : base(mensaje, innerException) { }
     }
 }

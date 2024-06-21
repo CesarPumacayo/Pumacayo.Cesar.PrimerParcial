@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Interfaz.FormsGaseosas
 {
     /// <summary>
@@ -65,12 +66,27 @@ namespace Interfaz.FormsGaseosas
 
             try
             {
+                if (string.IsNullOrEmpty(this.txtPrecio.Text) || string.IsNullOrEmpty(this.txtCantidad.Text) || string.IsNullOrEmpty(this.txtLitros.Text))
+                {
+                    throw new CamposNullMyExpection();
+                }
+
+           
                 EtipoBotella tipoBotella = (EtipoBotella)base.cboBotella.SelectedItem;
                 int cantidad = int.Parse(base.txtCantidad.Text);
                 double precio = double.Parse(base.txtPrecio.Text);
 
                 float litros = float.Parse(this.txtLitros.Text);
                 bool excesoAzucar = this.checkAzucar.Checked;
+          
+                if (precio == 0 || cantidad == 0 || litros == 0)
+                {
+
+
+                    throw new CamposZeroMyExpection("Ingrese un número distinto de cero.\n¡Tenga cuidado!");
+
+                }
+
 
                 this.miFanta = new Fanta(tipoBotella, precio, cantidad, litros, excesoAzucar);
 
@@ -78,9 +94,19 @@ namespace Interfaz.FormsGaseosas
 
                 base.btnAceptar_Click(sender, e);
             }
-            catch (Exception ex)
+            catch (FormatException ex)
             {
                 MessageBox.Show("Por favor, asegúrese de que todos los campos numéricos tengan un formato válido.\n" + ex.Message, "Error de formato", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (CamposNullMyExpection ex)
+            {
+               
+                MessageBox.Show($"Error: {ex.Message}", "Error de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
+            catch (CamposZeroMyExpection ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
