@@ -25,11 +25,33 @@ namespace Interfaz
             InitializeComponent();
             this.fabrica = new InventarioGaseosas<Gaseosa>(5);
 
+
         }
+        /// <summary>
+        /// Constructor del formulario FrmCRUD que inicializa la interfaz de usuario
+        /// y configura las opciones del menú según el perfil del usuario.
+        /// </summary>
+        /// <param name="usuario">Instancia de la clase Usuario segun la condicion de los distintos perfiles de cada usuario.</param>
         public FrmCRUD(Usuario usuario) : this()
         {
             MessageBox.Show($"¡Bienvenido {usuario.nombre}!", "Login exitoso.");
             this.Text = $"Bienvenido, { usuario.nombre} {usuario.apellido}                                 Fecha actual: " + DateTime.Today.ToString("dd/MM/yyyy");
+        
+            if(usuario.perfil == "administrador")
+            {
+  
+            }
+            else if(usuario.perfil == "supervisor")
+            {
+                eliminarToolStripMenuItem.Enabled = false;
+            }
+            else if(usuario.perfil == "vendedor")
+            {
+                eliminarToolStripMenuItem.Enabled = false;
+                modificarToolStripMenuItem.Enabled = false; 
+                agregarToolStripMenuItem.Enabled = false;
+            }
+        
         }
 
         private void FrmCRUD_Load(object sender, EventArgs e)
