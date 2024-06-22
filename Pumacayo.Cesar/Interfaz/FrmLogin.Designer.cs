@@ -138,9 +138,9 @@
         private Button btnSalir;
         private Button btnAceptar;
         private Label labelContraseña;
-        private TextBox txtClave;
-        private TextBox txtCorreo;
         private Label labelCorreo;
         private Label labelTitulo;
+        public TextBox txtCorreo;
+        public TextBox txtClave;
     }
 }

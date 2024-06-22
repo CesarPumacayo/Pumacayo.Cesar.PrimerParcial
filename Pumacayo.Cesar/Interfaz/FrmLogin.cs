@@ -7,6 +7,7 @@ namespace Interfaz
     /// </summary>
     public partial class FrmLogin : Form
     {
+
         private Usuario? usuario;
 
         /// <summary>
@@ -61,7 +62,7 @@ namespace Interfaz
         /// El archivo JSON se deserializa en una lista de objetos Usuario.
         /// </summary>
         /// <returns>resultado: El objeto Usuario si se encuentra una coincidencia; de lo contrario, null.</returns>
-        private Usuario? Verificar()
+        public Usuario? Verificar()
         {
             Usuario? resultado = null;
 
