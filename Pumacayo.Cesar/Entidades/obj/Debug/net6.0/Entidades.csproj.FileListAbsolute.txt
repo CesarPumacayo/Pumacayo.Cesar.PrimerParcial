@@ -22,3 +22,6 @@ C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParc
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Entidades\obj\Debug\net6.0\refint\Entidades.dll
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Entidades\obj\Debug\net6.0\Entidades.pdb
 C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Entidades\obj\Debug\net6.0\ref\Entidades.dll
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Entidades\obj\Debug\net6.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Entidades\obj\Debug\net6.0\Entidades.Properties.Resources.resources
+C:\Users\Usuario\OneDrive\Escritorio\Nueva carpeta (2)\Pumacayo.Cesar.PrimerParcial\Pumacayo.Cesar\Entidades\obj\Debug\net6.0\Entidades.csproj.GenerateResource.cache

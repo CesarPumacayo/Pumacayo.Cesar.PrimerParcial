@@ -12,20 +12,28 @@ using System.Xml.Serialization;
 using Entidades;
 using Interfaz.FormsGaseosas;
 using Microsoft.VisualBasic.Logging;
+using System.Data.SqlClient;
 
 namespace Interfaz
 {
-    public partial class FrmCRUD : Form
+    public partial class FrmCRUD : Form, IDatosUsuario, ICrudBD
     {
         private InventarioGaseosas<Gaseosa> fabrica;
 
+
+
+
+        public delegate void ElementoEliminadoDelegate(string nombreElemento);
+        public event ElementoEliminadoDelegate ElementoEliminadoEvent;
+        public delegate void ActualizacionBaseDatosCompletaDelegate();
+        public event ActualizacionBaseDatosCompletaDelegate ActualizacionBaseDatosCompletaEvent;
 
         public FrmCRUD()
         {
             InitializeComponent();
             this.fabrica = new InventarioGaseosas<Gaseosa>(5);
 
-
+            //actualizarCrudBaseDatos();
         }
         /// <summary>
         /// Constructor del formulario FrmCRUD que inicializa la interfaz de usuario
@@ -35,23 +43,27 @@ namespace Interfaz
         public FrmCRUD(Usuario usuario) : this()
         {
             MessageBox.Show($"¡Bienvenido {usuario.nombre}!", "Login exitoso.");
-            this.Text = $"Bienvenido, { usuario.nombre} {usuario.apellido}                                 Fecha actual: " + DateTime.Today.ToString("dd/MM/yyyy");
-        
-            if(usuario.perfil == "administrador")
+            this.Text = cargaDatos(usuario);
+
+            if (usuario.perfil == "administrador")
             {
-  
+
             }
-            else if(usuario.perfil == "supervisor")
+            else if (usuario.perfil == "supervisor")
             {
                 eliminarToolStripMenuItem.Enabled = false;
             }
-            else if(usuario.perfil == "vendedor")
+            else if (usuario.perfil == "vendedor")
             {
                 eliminarToolStripMenuItem.Enabled = false;
-                modificarToolStripMenuItem.Enabled = false; 
+                modificarToolStripMenuItem.Enabled = false;
                 agregarToolStripMenuItem.Enabled = false;
             }
-        
+
+        }
+        public string cargaDatos(Usuario usuario)
+        {
+            return $"Bienvenido, {usuario.nombre} {usuario.apellido}                                Fecha actual: " + DateTime.Today.ToString("dd/MM/yyyy");
         }
 
         private void FrmCRUD_Load(object sender, EventArgs e)
@@ -61,6 +73,7 @@ namespace Interfaz
 
         private void FrmCRUD_Cerrar(object sender, FormClosingEventArgs e)
         {
+
             DialogResult resultado = MessageBox.Show("Quieres cerrar la sesion?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (resultado == DialogResult.No)
@@ -70,23 +83,51 @@ namespace Interfaz
         }
         private void ActualizarVisor()
         {
-            this.listVisor.Items.Clear();
-            if (fabrica.ListaGaseosas != null)
+            //this.listVisor.Items.Clear();
+            //if (fabrica.ListaGaseosas != null)
+            //{
+            //    foreach (Gaseosa gaseosa in fabrica.ListaGaseosas)
+            //    {
+            //        this.listVisor.Items.Add(gaseosa);
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("La lista de gaseosas es null.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            if (listVisor.InvokeRequired)
             {
-                foreach (Gaseosa gaseosa in fabrica.ListaGaseosas)
-                {
-                    this.listVisor.Items.Add(gaseosa);
-                }
+                // Si se está llamando desde un subproceso diferente, invocar al hilo principal.
+                listVisor.Invoke(new MethodInvoker(() => ActualizarVisor()));
+                listVisor.Invoke(new MethodInvoker(async () => await guardarDatosAutomaticoAsync()));
             }
             else
             {
-                MessageBox.Show("La lista de gaseosas es null.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                // Actualizar la interfaz de usuario en el hilo principal.
+                this.listVisor.Items.Clear();
+
+                //Veterinaria === Fabrica
+                //listaPacientes es ListaGaseosa
+                if (fabrica.ListaGaseosas != null)
+                {
+                    foreach (Gaseosa gaseosa in fabrica.ListaGaseosas)
+                    {
+                        listVisor.Items.Add(gaseosa.ToString());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("La lista de gaseosas es null.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
             }
         }
 
         private void fantaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-    
+
             FrmFanta frmFanta = new FrmFanta();
             frmFanta.ShowDialog();
             if (frmFanta.DialogResult == DialogResult.OK)
@@ -215,7 +256,7 @@ namespace Interfaz
             }
         }
 
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int index = this.listVisor.SelectedIndex;
             if (index == -1 || this.fabrica.ListaGaseosas == null)
@@ -227,14 +268,103 @@ namespace Interfaz
 
             if (resultado == DialogResult.Yes)
             {
-                if (index < fabrica.ListaGaseosas.Count)
-                {
-                    Gaseosa g = this.fabrica.ListaGaseosas[index];
-                    this.fabrica -= g;
-                    this.ActualizarVisor();
-                }
+                double precioElementoAEliminar = fabrica.ListaGaseosas[index].Precio;
+                this.fabrica.ListaGaseosas.RemoveAt(index);
+                await eliminarElementoBaseDatos(precioElementoAEliminar);
+                //if (index < fabrica.ListaGaseosas.Count)
+                //{
+                //    Gaseosa g = this.fabrica.ListaGaseosas[index];
+                //    this.fabrica -= g;
+                //    this.ActualizarVisor();
+                //}
+                ActualizarVisor();
+            }
+            if (resultado == DialogResult.No)
+            {
+
+
             }
 
+        }
+        public async void actualizarCrudBaseDatos()
+        {
+            await Task.Run(() =>
+            {
+                UpdateCrudBaseDatos actualizador = new UpdateCrudBaseDatos();
+                actualizador.ActualizarCrudBaseDatos(fabrica);
+                ActualizarVisor();
+            });
+
+
+            ActualizacionBaseDatosCompletaEvent?.Invoke();
+        }
+
+        public async Task guardarDatosAutomaticoAsync()
+        {
+            try
+            {
+                // Dominio de la maquina del usuario
+                string directorioEjecutable = AppDomain.CurrentDomain.BaseDirectory;
+                // Retrocedo de la carpeta bin
+                string rutaRelativa = Path.Combine("..", "..", "..", "Registro.xml");
+                string filePath = Path.Combine(directorioEjecutable, rutaRelativa);
+
+                List<Usuario> listaSerializada = new List<Usuario>();
+
+                foreach (var paciente in fabrica.ListaGaseosas)
+                {
+                    // Obtener el nombre del tipo de objeto (Fanta, Manaos, Sprite)
+                    string tipo = paciente.GetType().Name;
+
+                    // Crear un ObjetoSerializado con el tipo y los datos
+                    var objetoSerializado = new Usuario
+                    {
+                        Tipo = tipo,
+                        Datos = paciente
+                    };
+
+                    listaSerializada.Add(objetoSerializado);
+                }
+
+                // Crear un XmlSerializer para la lista de usuarios
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Usuario>));
+
+                // Escribir el archivo XML
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    serializer.Serialize(writer, listaSerializada);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error de registro XML", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public async Task eliminarElementoBaseDatos(double precio)
+        {
+            await Task.Run(() =>
+            {
+                try
+                {
+                    AccesoBaseDatos.Conectar();
+                    string consulta = "DELETE FROM Tabla_Gaseosa WHERE precio = @NombreAEliminar";
+                    SqlCommand cmd = new SqlCommand(consulta, AccesoBaseDatos.Conectar());
+                    cmd.Parameters.AddWithValue("@NombreAEliminar", precio);
+                    cmd.ExecuteNonQuery();
+                    ElementoEliminadoEvent?.Invoke(precio.ToString());
+                    MessageBox.Show("Dato eliminado");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            });
+        }
+        private void btnAbrirBaseDatos_Click(object sender, EventArgs e)
+        {
+            actualizarCrudBaseDatos();
+            listVisor.Items.Clear();
+            ActualizarVisor();
         }
 
         private void btnAbrirArchivo_Click(object sender, EventArgs e)
@@ -247,7 +377,6 @@ namespace Interfaz
                 this.ActualizarVisor();
             }
         }
-
         private void btnGuardarArchivo_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -258,7 +387,6 @@ namespace Interfaz
             }
 
         }
-
         private void ascendentePrecio_Click(object sender, EventArgs e)
         {
             if (fabrica.ListaGaseosas != null)
@@ -267,7 +395,6 @@ namespace Interfaz
                 this.ActualizarVisor();
             }
         }
-
         private void descendentePrecio_Click(object sender, EventArgs e)
         {
             if (fabrica.ListaGaseosas != null)
@@ -276,7 +403,6 @@ namespace Interfaz
                 this.ActualizarVisor();
             }
         }
-
         private void ascendenteCantidad_Click(object sender, EventArgs e)
         {
             if (fabrica.ListaGaseosas != null)
@@ -285,7 +411,6 @@ namespace Interfaz
                 this.ActualizarVisor();
             }
         }
-
         private void descendenteCantidad_Click(object sender, EventArgs e)
         {
             if (fabrica.ListaGaseosas != null)
@@ -294,16 +419,12 @@ namespace Interfaz
                 this.ActualizarVisor();
             }
         }
-
         private void historialToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmSesiones frmSesiones = new FrmSesiones();
             frmSesiones.MdiParent = this;
             frmSesiones.Show();
         }
-
-
-
         private void SerializeCollection(string filePath)
         {
             try
@@ -320,7 +441,6 @@ namespace Interfaz
                 MessageBox.Show("Error al serializar la colección: " + ex.Message, "Error de Serialización", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void DeserializeCollection(string filePath)
         {
             try
@@ -342,24 +462,6 @@ namespace Interfaz
                 MessageBox.Show("Error al deserializar la colección: " + ex.Message, "Error de Deserialización", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

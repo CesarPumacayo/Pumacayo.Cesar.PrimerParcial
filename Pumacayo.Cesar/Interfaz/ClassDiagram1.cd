@@ -9,7 +9,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAEAAAARCAAABgAAACAAAACAAAAAAAAAAAAAAAAACA=</HashCode>
+      <HashCode>BAAEAAAARCIAABgAAACAAAACAAAAgAAAAAABAAQAAiA=</HashCode>
       <FileName>FormsGaseosas\FrmFanta.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -23,23 +23,36 @@
   <Class Name="Interfaz.FormsGaseosas.FrmManaos">
     <Position X="5.25" Y="6.5" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAABhAAACAACACAAAgEAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>BAAAAAAAACIAABhAAACAACACAAAgkAAAAAAAACQAAgA=</HashCode>
       <FileName>FormsGaseosas\FrmManaos.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Interfaz.FormsGaseosas.FrmSprite">
     <Position X="13.25" Y="6.5" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAACAAABgAAACAABACAAAAAAAAAAAAAAEACAA=</HashCode>
+      <HashCode>AAAIAAAAACAAABgAAACAABICAAAAgAAAAAAAAAEACgA=</HashCode>
       <FileName>FormsGaseosas\FrmSprite.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Interfaz.FrmCRUD">
     <Position X="0.5" Y="0.75" Width="4.5" />
+    <NestedTypes>
+      <Delegate Name="Interfaz.FrmCRUD.ElementoEliminadoDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FrmCRUD.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Interfaz.FrmCRUD.ActualizacionBaseDatosCompletaDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FrmCRUD.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>F0RGQwCBRGAAoDgQQACARIACJADIAAAIAgoAAAgAIAA=</HashCode>
+      <HashCode>F0RGQxCBRGEAoDgQQACARIACJIDYAAAIAgoAIAkBIAA=</HashCode>
       <FileName>FrmCRUD.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Interfaz.FrmSesiones">
     <Position X="13.25" Y="0.75" Width="2.25" />
@@ -51,8 +64,7 @@
   <Class Name="Interfaz.FrmLogin">
     <Position X="5.5" Y="0.75" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAACACAABAgABACAAAQCAAAAAQYCACAAEAAAAAE=</HashCode>
-      <FileName>FrmLogin.cs</FileName>
+      <HashCode>AAAAAAAAACAAAAAABACAAAQCAAAAAQICACAAAAAAAAE=</HashCode>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

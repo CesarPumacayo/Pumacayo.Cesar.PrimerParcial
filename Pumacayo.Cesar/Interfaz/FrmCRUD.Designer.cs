@@ -49,6 +49,7 @@
             saveFileDialog1 = new SaveFileDialog();
             openFileDialog1 = new OpenFileDialog();
             label1 = new Label();
+            button2 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -184,7 +185,7 @@
             button1.Name = "button1";
             button1.Size = new Size(75, 51);
             button1.TabIndex = 7;
-            button1.Text = "Guardar";
+            button1.Text = "Guardar XML";
             button1.UseVisualStyleBackColor = true;
             button1.Click += btnGuardarArchivo_Click;
             // 
@@ -201,12 +202,23 @@
             label1.TabIndex = 9;
             label1.Text = "Cant. max : 5";
             // 
+            // button2
+            // 
+            button2.Location = new Point(817, 527);
+            button2.Name = "button2";
+            button2.Size = new Size(86, 53);
+            button2.TabIndex = 11;
+            button2.Text = "Abrir Registros de BD";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += btnAbrirBaseDatos_Click;
+            // 
             // FrmCRUD
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1166, 592);
+            Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(btnAbrirArchivo);
             Controls.Add(button1);
@@ -247,5 +259,6 @@
         private ToolStripMenuItem ascendenteToolStripMenuItem;
         private ToolStripMenuItem descendenteToolStripMenuItem;
         private Label label1;
+        private Button button2;
     }
 }

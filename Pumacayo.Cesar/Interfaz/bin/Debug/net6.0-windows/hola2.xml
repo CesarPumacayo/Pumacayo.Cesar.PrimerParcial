@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InventarioGaseosasOfGaseosa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListaGaseosas>
+    <Gaseosa xsi:type="Sprite">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>3800</Precio>
+      <Cantidad>1</Cantidad>
+      <EsRetornable>true</EsRetornable>
+      <Codigo>111110</Codigo>
+    </Gaseosa>
+  </ListaGaseosas>
+  <CantMaxGaseosas>5</CantMaxGaseosas>
+</InventarioGaseosasOfGaseosa>

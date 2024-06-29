@@ -11,33 +11,10 @@ namespace TestUnitario
     [TestClass]
     public class UnitTest1
     {
-
-        /// <summary>
-        /// Verifica que el archivo MOCK_DATA.json se encuentra en la ubicación esperada.
-        /// </summary>
-        [TestMethod]
-        public void VerificarUbicacionArchivoJson()
-        {
-            //Arrange
-            string directorioEjecutable = AppDomain.CurrentDomain.BaseDirectory;
-
-            string jsonPath = Path.Combine(@"..\..\..\MOCK_DATA.json");
-
-            string filePath = Path.GetFullPath(Path.Combine(directorioEjecutable, jsonPath));
-
-            //Act y Assert
-            if(File.Exists(filePath)) 
-            {
-                Assert.IsTrue(File.Exists(filePath));
-            }
-
-
-        }
         /// <summary>
         /// Prueba unitaria para verificar que el método Verificar del formulario FrmLogin 
         /// encuentre correctamente un usuario en el archivo JSON con credenciales válidas.
         /// </summary>
-
         [TestMethod]
         public void VerificarUsuarioJson()
         {
@@ -69,6 +46,29 @@ namespace TestUnitario
             // Clean up
             File.Delete(jsonPath);
         }
+
+        /// <summary>
+        /// Verifica que el archivo MOCK_DATA.json se encuentra en la ubicación esperada.
+        /// </summary>
+        [TestMethod]
+        public void VerificarUbicacionArchivoJson()
+        {
+            //Arrange
+            string directorioEjecutable = AppDomain.CurrentDomain.BaseDirectory;
+
+            string jsonPath = Path.Combine(@"..\..\..\MOCK_DATA.json");
+
+            string filePath = Path.GetFullPath(Path.Combine(directorioEjecutable, jsonPath));
+
+            //Act y Assert
+            if (File.Exists(filePath))
+            {
+                Assert.IsTrue(File.Exists(filePath));
+            }
+
+
+        }
+
         /// <summary>
         /// Prueba verifica la igualdad de dos instancias de gaseosas con los mismos valores de propiedades
         /// </summary>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUsuario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Usuario>
+    <Tipo>Fanta</Tipo>
+    <Datos xsi:type="Fanta">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>1</Precio>
+      <Cantidad>1</Cantidad>
+      <ExcesoAzucar>true</ExcesoAzucar>
+      <Litros>1</Litros>
+    </Datos>
+  </Usuario>
+  <Usuario>
+    <Tipo>Fanta</Tipo>
+    <Datos xsi:type="Fanta">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>2</Precio>
+      <Cantidad>2</Cantidad>
+      <ExcesoAzucar>true</ExcesoAzucar>
+      <Litros>2</Litros>
+    </Datos>
+  </Usuario>
+  <Usuario>
+    <Tipo>Fanta</Tipo>
+    <Datos xsi:type="Fanta">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>3</Precio>
+      <Cantidad>3</Cantidad>
+      <ExcesoAzucar>true</ExcesoAzucar>
+      <Litros>3</Litros>
+    </Datos>
+  </Usuario>
+  <Usuario>
+    <Tipo>Fanta</Tipo>
+    <Datos xsi:type="Fanta">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>4</Precio>
+      <Cantidad>4</Cantidad>
+      <ExcesoAzucar>true</ExcesoAzucar>
+      <Litros>4</Litros>
+    </Datos>
+  </Usuario>
+  <Usuario>
+    <Tipo>Fanta</Tipo>
+    <Datos xsi:type="Fanta">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>2222</Precio>
+      <Cantidad>222</Cantidad>
+      <ExcesoAzucar>true</ExcesoAzucar>
+      <Litros>6</Litros>
+    </Datos>
+  </Usuario>
+</ArrayOfUsuario>
