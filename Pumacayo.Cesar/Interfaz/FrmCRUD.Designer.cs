@@ -206,9 +206,9 @@
             // 
             button2.Location = new Point(817, 527);
             button2.Name = "button2";
-            button2.Size = new Size(86, 53);
+            button2.Size = new Size(99, 53);
             button2.TabIndex = 11;
-            button2.Text = "Abrir Registros de BD";
+            button2.Text = "Mostrar registros Base de Datos";
             button2.UseVisualStyleBackColor = true;
             button2.Click += btnAbrirBaseDatos_Click;
             // 

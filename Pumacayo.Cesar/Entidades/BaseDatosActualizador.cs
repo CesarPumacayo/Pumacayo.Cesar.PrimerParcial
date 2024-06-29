@@ -3,14 +3,12 @@ using System.Data.SqlClient;
 
 namespace Entidades
 {
-    public class UpdateCrudBaseDatos
+    public class BaseDatosActualizador
     {
         public Gaseosa? gaseosa;
-        private InventarioGaseosas<Gaseosa>? fabrica;
 
         public void ActualizarCrudBaseDatos(InventarioGaseosas<Gaseosa> fabrica)
         {
-            fabrica.ListaGaseosas.Clear();
             AccesoBaseDatos ado = new AccesoBaseDatos();
 
             if (ado.ProbarConexion())
@@ -29,10 +27,14 @@ namespace Entidades
                             // Iterar a través de los resultados
                             while (reader.Read())
                             {
-                                if (fabrica.ListaGaseosas.Count >= 5)
+                                if(fabrica.ListaGaseosas != null)
                                 {
-                                    // Si ya hay 5 elementos en la lista, salimos del bucle
-                                    break;
+
+                                    if (fabrica.ListaGaseosas.Count >= 5)
+                                    {
+                                        // Si ya hay 5 elementos en la lista, salimos del bucle
+                                        break;
+                                    }
                                 }
 
                                 //???▼
@@ -67,7 +69,10 @@ namespace Entidades
 
                                 if (gaseosa != null)
                                 {
-                                    fabrica.ListaGaseosas.Add(gaseosa);
+                                    if(fabrica.ListaGaseosas != null)
+                                    {
+                                        fabrica.ListaGaseosas.Add(gaseosa);
+                                    }
                                 }
                             }
                         }

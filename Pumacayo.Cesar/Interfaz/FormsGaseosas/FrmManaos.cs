@@ -127,27 +127,7 @@ namespace Interfaz.FormsGaseosas
             cantidadGaseosasRegistradas++;
 
         }
-        private int ObtenerCantidadGaseosasRegistradas()
-        {
-            int cantidad = 0;
-            try
-            {
-                // Lógica para obtener la cantidad de gaseosas en la base de datos
-                // Aquí deberías realizar una consulta SQL para contar las gaseosas registradas
-                // Ejemplo:
-                using (var connection = AccesoBaseDatos.Conectar())
-                {
-                    string consulta = "SELECT COUNT(*) FROM Tabla_Gaseosa";
-                    var cmd = new SqlCommand(consulta, connection);
-                    cantidad = (int)cmd.ExecuteScalar();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al obtener la cantidad de gaseosas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            return cantidad;
-        }
+
         public void agregarManaos()
         {
             EtipoBotella tipoBotella = (EtipoBotella)base.cboBotella.SelectedItem;
@@ -161,7 +141,11 @@ namespace Interfaz.FormsGaseosas
             string tipoSaborStr = tipoSabor.ToString();
             string tipoBotellaStr = tipoBotella.ToString();
 
-
+            if (ExisteGaseosaEnBaseDeDatosManaos(tipoBotellaStr, precio, cantidad, tipoSaborStr, excesoCalorias))
+            {
+                MessageBox.Show("La gaseosa ya existe en la base de datos.", "Duplicado detectado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (esActualizacion == false)
             {
                 try

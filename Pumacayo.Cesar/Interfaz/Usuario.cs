@@ -17,9 +17,9 @@ namespace Interfaz
         public string? perfil { get; set; }
 
         [XmlElement(ElementName = "Tipo")]
-        public string Tipo { get; set; }
+        public string? Tipo { get; set; }
         [XmlElement(ElementName = "Datos")]
-        public Gaseosa Datos { get; set; }
+        public Gaseosa? Datos { get; set; }
 
     }
 }

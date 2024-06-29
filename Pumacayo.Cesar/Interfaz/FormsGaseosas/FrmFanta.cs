@@ -78,7 +78,7 @@ namespace Interfaz.FormsGaseosas
             {
                 MessageBox.Show(e.Message);
             }
-
+                                                 
         }
         /// <summary>
         /// Manejador de eventos heredada con el click del boton "Aceptar" y carga los datos ingresados al objeto Fanta.
@@ -92,7 +92,7 @@ namespace Interfaz.FormsGaseosas
                 MessageBox.Show("No se pueden agregar más gaseosas, se ha alcanzado el límite máximo." +
                                 "\n\nActualice la base de datos.",
                                 "Límite alcanzado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // Salir del método sin realizar la inserción
+                return; 
             }
             agregarFanta();
 
@@ -140,27 +140,7 @@ namespace Interfaz.FormsGaseosas
             }
             cantidadGaseosasRegistradas++;
         }
-        private int ObtenerCantidadGaseosasRegistradas()
-        {
-            int cantidad = 0;
-            try
-            {
-                // Lógica para obtener la cantidad de gaseosas en la base de datos
-                // Aquí deberías realizar una consulta SQL para contar las gaseosas registradas
-                // Ejemplo:
-                using (var connection = AccesoBaseDatos.Conectar())
-                {
-                    string consulta = "SELECT COUNT(*) FROM Tabla_Gaseosa";
-                    var cmd = new SqlCommand(consulta, connection);
-                    cantidad = (int)cmd.ExecuteScalar();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al obtener la cantidad de gaseosas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            return cantidad;
-        }
+       
         public void agregarFanta()
         {
             EtipoBotella tipoBotella = (EtipoBotella)base.cboBotella.SelectedItem;
@@ -172,7 +152,13 @@ namespace Interfaz.FormsGaseosas
 
             this.gaseosas = new Fanta(tipoBotella, precio, cantidad, litros, excesoAzucar);
 
-            string tipoBotellaStr = tipoBotella.ToString(); 
+            string tipoBotellaStr = tipoBotella.ToString();
+
+            if (ExisteGaseosaEnBaseDeDatosFanta(tipoBotellaStr, precio, cantidad, litros, excesoAzucar))
+            {
+                MessageBox.Show("La gaseosa ya existe en la base de datos.", "Duplicado detectado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (esActualizacion == false)
             {
                 try
@@ -229,5 +215,7 @@ namespace Interfaz.FormsGaseosas
                 }
             }
         }
+
+
     }
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InventarioGaseosasOfGaseosa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListaGaseosas>
+    <Gaseosa xsi:type="Fanta">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>21</Precio>
+      <Cantidad>1</Cantidad>
+      <ExcesoAzucar>true</ExcesoAzucar>
+      <Litros>1</Litros>
+    </Gaseosa>
+    <Gaseosa xsi:type="Manaos">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>2</Precio>
+      <Cantidad>2</Cantidad>
+      <TipoSabor>Cola</TipoSabor>
+      <ExcesoCalorias>true</ExcesoCalorias>
+    </Gaseosa>
+    <Gaseosa xsi:type="Sprite">
+      <TipoBotella>Lata</TipoBotella>
+      <Precio>2000</Precio>
+      <Cantidad>1</Cantidad>
+      <EsRetornable>true</EsRetornable>
+      <Codigo>222221</Codigo>
+    </Gaseosa>
+    <Gaseosa xsi:type="Sprite">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>2000</Precio>
+      <Cantidad>1</Cantidad>
+      <EsRetornable>true</EsRetornable>
+      <Codigo>2</Codigo>
+    </Gaseosa>
+    <Gaseosa xsi:type="Fanta">
+      <TipoBotella>Vidrio</TipoBotella>
+      <Precio>4800</Precio>
+      <Cantidad>1</Cantidad>
+      <ExcesoAzucar>false</ExcesoAzucar>
+      <Litros>2.25</Litros>
+    </Gaseosa>
+  </ListaGaseosas>
+  <CantMaxGaseosas>5</CantMaxGaseosas>
+</InventarioGaseosasOfGaseosa>

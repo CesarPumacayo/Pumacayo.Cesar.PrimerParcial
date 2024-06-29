@@ -1,4 +1,4 @@
-# CRUD - Gaseosas
+# SEGUNDO PARCIAL LABO II | CRUD - Gaseosas
 
 ## Sobre mi
 

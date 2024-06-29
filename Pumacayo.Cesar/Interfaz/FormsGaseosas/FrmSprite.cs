@@ -10,6 +10,7 @@ namespace Interfaz.FormsGaseosas
         private Sprite? miSprite;
         private int id;
         private bool esActualizacion = false;
+        private int cantidadGaseosasRegistradas;
 
         #region Propiedades
         /// <summary>
@@ -29,6 +30,8 @@ namespace Interfaz.FormsGaseosas
                 this.cboBotella.Items.Add(tipoBotella);
             }
             this.cboBotella.SelectedItem = EtipoBotella.Plastico;
+            cantidadGaseosasRegistradas = ObtenerCantidadGaseosasRegistradas();
+
         }
 
         /// <summary>
@@ -69,6 +72,13 @@ namespace Interfaz.FormsGaseosas
         /// <param name="e">Argumentos del evento</param>
         protected override void btnAceptar_Click(object sender, EventArgs e)
         {
+            if (cantidadGaseosasRegistradas >= 5)
+            {
+                MessageBox.Show("No se pueden agregar más gaseosas, se ha alcanzado el límite máximo." +
+                                "\n\nActualice la base de datos.",
+                                "Límite alcanzado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             agregarSprite();
             try
             {
@@ -102,6 +112,8 @@ namespace Interfaz.FormsGaseosas
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error de registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            cantidadGaseosasRegistradas++;
+
         }
 
         public void agregarSprite()
@@ -116,6 +128,11 @@ namespace Interfaz.FormsGaseosas
 
             string tipoBotellaStr = tipoBotella.ToString();
 
+            if (ExisteGaseosaEnBaseDeDatoSprite(tipoBotellaStr, precio, cantidad, codigo, esRetornable))
+            {
+                MessageBox.Show("La gaseosa ya existe en la base de datos.", "Duplicado detectado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (esActualizacion == false)
             {
                 try
