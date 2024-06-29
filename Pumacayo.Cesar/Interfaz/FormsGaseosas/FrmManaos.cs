@@ -127,7 +127,9 @@ namespace Interfaz.FormsGaseosas
             cantidadGaseosasRegistradas++;
 
         }
-
+        /// <summary>
+        /// Método para agregar una gaseosa tipo Manaos a la base de datos o actualizarla si ya existe.
+        /// </summary>
         public void agregarManaos()
         {
             EtipoBotella tipoBotella = (EtipoBotella)base.cboBotella.SelectedItem;

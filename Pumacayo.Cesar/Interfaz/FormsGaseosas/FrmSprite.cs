@@ -116,6 +116,9 @@ namespace Interfaz.FormsGaseosas
 
         }
 
+        /// <summary>
+        /// Método para agregar una gaseosa tipo Sprite a la base de datos o actualizarla si ya existe.
+        /// </summary>
         public void agregarSprite()
         {
             EtipoBotella tipoBotella = (EtipoBotella)base.cboBotella.SelectedItem;

@@ -88,6 +88,10 @@ namespace Interfaz
                 e.Cancel = true;
             }
         }
+        /// <summary>
+        /// Método para actualizar la visualización de la lista de gaseosas en el formulario.
+        /// Si es necesario, invoca el método de manera asíncrona para guardar los datos automáticamente.
+        /// </summary>
         private void ActualizarVisor()
         {
             if (listVisor.InvokeRequired)
@@ -113,6 +117,10 @@ namespace Interfaz
 
             }
         }
+        /// <summary>
+        /// Método para agregar una nueva gaseosa a la lista de fabricación.
+        /// </summary>
+        /// <param name="gaseosa">Gaseosa a agregar.</param>
         public void AgregarGaseosa(Gaseosa gaseosa)
         {
             if(fabrica.ListaGaseosas != null)
@@ -130,7 +138,11 @@ namespace Interfaz
             }
         }
 
-
+        /// <summary>
+        /// Método para modificar una gaseosa en la lista de fabricación.
+        /// </summary>
+        /// <param name="indice">Índice de la gaseosa a modificar.</param>
+        /// <param name="gaseosa">Nueva información de la gaseosa.</param>
         public void ModificarGaseosa(int indice, Gaseosa gaseosa)
         {
             if(fabrica.ListaGaseosas != null)
@@ -141,7 +153,9 @@ namespace Interfaz
 
             }
         }
-
+        /// <summary>
+        /// Evento para crear una nueva gaseosa de tipo Fanta mediante un formulario específico.
+        /// </summary>
         private void fantaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -161,7 +175,9 @@ namespace Interfaz
                 }
             }
         }
-
+        /// <summary>
+        /// Evento para crear una nueva gaseosa de tipo Manaos mediante un formulario específico.
+        /// </summary>
         private void manaosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmManaos frmManaos = new FrmManaos();
@@ -180,7 +196,9 @@ namespace Interfaz
                 }
             }
         }
-
+        /// <summary>
+        /// Evento para crear una nueva gaseosa de tipo Sprite mediante un formulario específico.
+        /// </summary>
         private void spriteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmSprite frmSprite = new FrmSprite();
@@ -200,6 +218,7 @@ namespace Interfaz
             }
 
         }
+
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -251,6 +270,9 @@ namespace Interfaz
             }
         }
 
+        /// <summary>
+        /// Evento asíncrono para eliminar una gaseosa de la lista de fabricación y la base de datos.
+        /// </summary>
         private async void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int index = this.listVisor.SelectedIndex;
@@ -275,6 +297,9 @@ namespace Interfaz
             }
 
         }
+        /// <summary>
+        /// Método asíncrono para actualizar la base de datos con los cambios en la lista de fabricación.
+        /// </summary>
         public async void actualizarCrudBaseDatos()
         {
             await Task.Run(() =>
@@ -287,7 +312,9 @@ namespace Interfaz
 
             BaseDatosActualizadaEvent?.Invoke();
         }
-
+        /// <summary>
+        /// Método asíncrono para guardar automáticamente los datos de la lista de gaseosas en un archivo XML.
+        /// </summary>
         public async Task guardarDatosAutomaticoAsync()
         {
             try
@@ -330,6 +357,10 @@ namespace Interfaz
             }
         }
 
+        /// <summary>
+        /// Método asíncrono para eliminar un elemento de la base de datos.
+        /// </summary>
+        /// <param name="precio">Precio del elemento a eliminar.</param>
         public async Task eliminarElementoBaseDatos(double precio)
         {
             await Task.Run(() =>
@@ -350,6 +381,11 @@ namespace Interfaz
                 }
             });
         }
+        /// <summary>
+        /// Evento del botón para abrir la base de datos y actualizar la lista de gaseosas visualizadas en el formulario.
+        /// </summary>
+        /// <param name="sender">Objeto que desencadenó el evento.</param>
+        /// <param name="e">Argumentos del evento.</param>
         private void btnAbrirBaseDatos_Click(object? sender, EventArgs e)
         {
             actualizarCrudBaseDatos();

@@ -30,6 +30,15 @@ namespace Interfaz.FormsGaseosas
             this.DialogResult = DialogResult.Cancel;
 
         }
+        /// <summary>
+        /// Verifica la existencia de una gaseosa Manaos en la base de datos.
+        /// </summary>
+        /// <param name="tipoBotella">Tipo de botella de la gaseosa.</param>
+        /// <param name="precio">Precio.</param>
+        /// <param name="cantidad">Cantidad disponible en inventario.</param>
+        /// <param name="tipoSabor">Tipo de sabor </param>
+        /// <param name="excesoCalorias">Indica si tiene exceso de calorías.</param>
+        /// <returns>True si la gaseosa Manaos existe en la base de datos, false si no.</returns>
         protected bool ExisteGaseosaEnBaseDeDatosManaos(string tipoBotella, double precio, int cantidad, string tipoSabor, bool excesoCalorias)
         {
             bool existe = false;
@@ -60,7 +69,15 @@ namespace Interfaz.FormsGaseosas
 
             return existe;
         }
-
+        /// <summary>
+        /// Verifica la existencia de una gaseosa Fanta en la base de datos.
+        /// </summary>
+        /// <param name="tipoBotella">Tipo de botella de la gaseosa.</param>
+        /// <param name="precio">Precio de la gaseosa.</param>
+        /// <param name="cantidad">Cantidad disponible en inventario.</param>
+        /// <param name="litros">Cantidad de litros de la gaseosa Fanta.</param>
+        /// <param name="excesoAzucar">Indica si la gaseosa Fanta tiene exceso de azúcar.</param>
+        /// <returns>True si la gaseosa Fanta existe en la base de datos, false si no.</returns>
         protected bool ExisteGaseosaEnBaseDeDatosFanta(string tipoBotella, double precio, int cantidad, float litros, bool excesoAzucar)
         {
             bool existe = false;
@@ -91,6 +108,15 @@ namespace Interfaz.FormsGaseosas
 
             return existe;
         }
+        /// <summary>
+        /// Verifica la existencia de una gaseosa Sprite en la base de datos.
+        /// </summary>
+        /// <param name="tipoBotella">Tipo de botella de la gaseosa.</param>
+        /// <param name="precio">Precio de la gaseosa.</param>
+        /// <param name="cantidad">Cantidad disponible en inventario.</param>
+        /// <param name="codigo">Código identificador de la gaseosa Sprite.</param>
+        /// <param name="retornable">Indica si la gaseosa Sprite es retornable.</param>
+        /// <returns>True si la gaseosa Sprite existe en la base de datos, false si no.</returns>
         protected bool ExisteGaseosaEnBaseDeDatoSprite(string tipoBotella, double precio, int cantidad, double codigo, bool retornable)
         {
             bool existe = false;
@@ -122,7 +148,10 @@ namespace Interfaz.FormsGaseosas
             return existe;
         }
 
-
+        /// <summary>
+        /// Obtiene la cantidad total de gaseosas registradas en la base de datos.
+        /// </summary>
+        /// <returns>Cantidad total de gaseosas registradas.</returns>
         protected int ObtenerCantidadGaseosasRegistradas()
         {
             int cantidad = 0;

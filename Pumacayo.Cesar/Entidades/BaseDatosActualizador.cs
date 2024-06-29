@@ -7,6 +7,9 @@ namespace Entidades
     {
         public Gaseosa? gaseosa;
 
+        /// <summary>
+        /// Método para actualizar la lista de gaseosas desde la base de datos.
+        /// </summary>
         public void ActualizarCrudBaseDatos(InventarioGaseosas<Gaseosa> fabrica)
         {
             AccesoBaseDatos ado = new AccesoBaseDatos();
@@ -15,16 +18,12 @@ namespace Entidades
             {
                 try
                 {
-                    // Definir la consulta SQL
                     string query = "SELECT id, tipo_botella, precio, cantidad, exceso_azucar, litros, tipo_sabor, exceso_calorias, codigo, retornable FROM Tabla_Gaseosa";
 
-                    // Crear un objeto SqlCommand
                     using (SqlCommand command = new SqlCommand(query, AccesoBaseDatos.Conectar()))
                     {
-                        // Crear un lector de datos
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            // Iterar a través de los resultados
                             while (reader.Read())
                             {
                                 if(fabrica.ListaGaseosas != null)
@@ -32,19 +31,14 @@ namespace Entidades
 
                                     if (fabrica.ListaGaseosas.Count >= 5)
                                     {
-                                        // Si ya hay 5 elementos en la lista, salimos del bucle
                                         break;
                                     }
                                 }
 
-                                //???▼
-
-                                // Obtener datos comunes
                                 Enum.TryParse(reader["tipo_botella"].ToString(), out EtipoBotella tipoBotella);
                                 double precio = Convert.ToDouble(reader["precio"]);
                                 int cantidad = Convert.ToInt32(reader["cantidad"]);
 
-                                // Lógica para inferir el tipo de gaseosa
                                 if (!reader.IsDBNull(reader.GetOrdinal("litros")) && !reader.IsDBNull(reader.GetOrdinal("exceso_azucar")))
                                 {
                                     // Asumimos que es una Fanta
