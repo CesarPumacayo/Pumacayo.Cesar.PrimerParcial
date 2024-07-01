@@ -3,11 +3,21 @@
   <Usuario>
     <Tipo>Fanta</Tipo>
     <Datos xsi:type="Fanta">
-      <TipoBotella>Vidrio</TipoBotella>
+      <TipoBotella>Plastico</TipoBotella>
       <Precio>4800</Precio>
       <Cantidad>1</Cantidad>
       <ExcesoAzucar>true</ExcesoAzucar>
-      <Litros>2.25</Litros>
+      <Litros>2.5</Litros>
+    </Datos>
+  </Usuario>
+  <Usuario>
+    <Tipo>Manaos</Tipo>
+    <Datos xsi:type="Manaos">
+      <TipoBotella>Plastico</TipoBotella>
+      <Precio>6200</Precio>
+      <Cantidad>2</Cantidad>
+      <TipoSabor>Cola</TipoSabor>
+      <ExcesoCalorias>true</ExcesoCalorias>
     </Datos>
   </Usuario>
 </ArrayOfUsuario>

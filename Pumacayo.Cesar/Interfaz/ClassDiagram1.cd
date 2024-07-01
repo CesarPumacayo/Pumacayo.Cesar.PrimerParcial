@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Interfaz.FormsGaseosas.FrmFanta">
-    <Position X="9.25" Y="6.5" Width="3.5" />
+    <Position X="17.25" Y="7.25" Width="3.75" />
     <InheritanceLine Type="Interfaz.FormsGaseosas.FrmGaseosa" FixedToPoint="true">
       <Path>
-        <Point X="11" Y="5.511" />
-        <Point X="11" Y="6.5" />
+        <Point X="19.875" Y="6.261" />
+        <Point X="19.875" Y="6.875" />
+        <Point X="19.125" Y="6.875" />
+        <Point X="19.125" Y="7.25" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -14,58 +16,103 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Interfaz.FormsGaseosas.FrmGaseosa">
-    <Position X="9.25" Y="0.75" Width="3.5" />
+    <Position X="15.75" Y="1.5" Width="8.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQADIIAJgABACABAECAABAAAAAAAAAAAACAAA=</HashCode>
       <FileName>FormsGaseosas\FrmGaseosa.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Interfaz.FormsGaseosas.FrmManaos">
-    <Position X="5.25" Y="6.5" Width="3.5" />
+    <Position X="13.25" Y="7.25" Width="3.75" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAACAAABhAAACAACACAAAgkAAAAAAAACQAAgA=</HashCode>
       <FileName>FormsGaseosas\FrmManaos.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Interfaz.FormsGaseosas.FrmSprite">
-    <Position X="13.25" Y="6.5" Width="3.5" />
+    <Position X="21.25" Y="7.25" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAACAAABgAAACAABICAAAAgAAAAAAAAAUACgA=</HashCode>
       <FileName>FormsGaseosas\FrmSprite.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Interfaz.FrmCRUD">
-    <Position X="0.5" Y="0.75" Width="4.5" />
+    <Position X="8.25" Y="1.5" Width="4.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <NestedTypes>
-      <Delegate Name="Interfaz.FrmCRUD.GaseosaEliminadaDelegate" Collapsed="true">
+      <Delegate Name="Interfaz.FrmCRUD.GaseosaEliminadaDelegate">
         <TypeIdentifier>
           <NewMemberFileName>FrmCRUD.cs</NewMemberFileName>
         </TypeIdentifier>
       </Delegate>
-      <Delegate Name="Interfaz.FrmCRUD.BaseDatosActualizadaDelegate" Collapsed="true">
+      <Delegate Name="Interfaz.FrmCRUD.BaseDatosActualizadaDelegate">
         <TypeIdentifier>
           <NewMemberFileName>FrmCRUD.cs</NewMemberFileName>
         </TypeIdentifier>
       </Delegate>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>F0RGQxCBRGEA4DgQQACARIACJADYAAAIAgoAIAgBIAA=</HashCode>
+      <HashCode>F0xGQxCBRmEA4DgQQACARIACJADYADAIBgoBIAgBIAA=</HashCode>
       <FileName>FrmCRUD.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Interfaz.FrmSesiones">
-    <Position X="13.25" Y="0.75" Width="2.25" />
+    <Position X="24.25" Y="1.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAEAACAAAAAAAACAAAACAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>FrmSesiones.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Interfaz.FrmLogin">
-    <Position X="5.5" Y="0.75" Width="3.5" />
+    <Position X="13" Y="1.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAABACAAAQCAAAAAQICACAAAAAAAAE=</HashCode>
     </TypeIdentifier>
   </Class>
+  <Class Name="Interfaz.CamposNullMyExpection">
+    <Position X="24.25" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MiClaseException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.CamposZeroMyExpection">
+    <Position X="13.25" Y="12.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MiClaseException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.Program">
+    <Position X="18.25" Y="12.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.Usuario">
+    <Position X="25.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQBAACAAAAAAAAAAAAAAACAAAAQgAAAAAQ=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Interfaz.ICrudBD">
+    <Position X="25.25" Y="9.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ICrudBD.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Interfaz.IDatosUsuario">
+    <Position X="25.25" Y="8.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>IDatosUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

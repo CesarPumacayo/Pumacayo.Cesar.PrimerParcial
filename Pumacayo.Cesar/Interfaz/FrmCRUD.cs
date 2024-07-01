@@ -20,21 +20,19 @@ namespace Interfaz
     {
         private InventarioGaseosas<Gaseosa> fabrica;
 
-        public delegate void GaseosaEliminadaDelegate(string nombreElemento);
-        public event GaseosaEliminadaDelegate? GaseosaEliminadaEvent;
-        public delegate void BaseDatosActualizadaDelegate();
-        public event BaseDatosActualizadaDelegate? BaseDatosActualizadaEvent;
-
-
         public event Action<Gaseosa>? GaseosaAgregadaEvent;
         public event Action<Gaseosa>? GaseosaModificadaEvent;
+        public delegate void BaseDatosActualizadaDelegate();
+        public event BaseDatosActualizadaDelegate? BaseDatosActualizadaEvent;
+        public delegate void GaseosaEliminadaDelegate(string nombreElemento);
+        public event GaseosaEliminadaDelegate? GaseosaEliminadaEvent;
 
+        private bool baseDatosCargada = false; 
         public FrmCRUD()
         {
             InitializeComponent();
             this.fabrica = new InventarioGaseosas<Gaseosa>(5);
 
-            //actualizarCrudBaseDatos();
         }
         /// <summary>
         /// Constructor del formulario FrmCRUD que inicializa la interfaz de usuario
@@ -60,7 +58,6 @@ namespace Interfaz
                 modificarToolStripMenuItem.Enabled = false;
                 agregarToolStripMenuItem.Enabled = false;
             }
-
         }
 
         /// <summary>
@@ -158,7 +155,11 @@ namespace Interfaz
         /// </summary>
         private void fantaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (!baseDatosCargada)
+            {
+                MessageBox.Show("Por favor, primero haga clic en 'Mostrar registros BD'.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             FrmFanta frmFanta = new FrmFanta();
             frmFanta.ShowDialog();
             if (frmFanta.DialogResult == DialogResult.OK)
@@ -180,6 +181,11 @@ namespace Interfaz
         /// </summary>
         private void manaosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!baseDatosCargada)
+            {
+                MessageBox.Show("Por favor, primero haga clic en 'Mostrar registros BD'.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             FrmManaos frmManaos = new FrmManaos();
             frmManaos.ShowDialog();
             if (frmManaos.DialogResult == DialogResult.OK)
@@ -201,6 +207,11 @@ namespace Interfaz
         /// </summary>
         private void spriteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!baseDatosCargada)
+            {
+                MessageBox.Show("Por favor, primero haga clic en 'Mostrar registros BD'.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             FrmSprite frmSprite = new FrmSprite();
             frmSprite.ShowDialog();
             if (frmSprite.DialogResult == DialogResult.OK)
@@ -222,6 +233,11 @@ namespace Interfaz
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!baseDatosCargada)
+            {
+                MessageBox.Show("Por favor, primero haga clic en 'Mostrar registros BD'.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             int i = this.listVisor.SelectedIndex;
             if (i == -1 || this.fabrica.ListaGaseosas == null)
             {
@@ -275,6 +291,11 @@ namespace Interfaz
         /// </summary>
         private async void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!baseDatosCargada)
+            {
+                MessageBox.Show("Por favor, primero haga clic en 'Mostrar registros BD'.", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             int index = this.listVisor.SelectedIndex;
             if (index == -1 || this.fabrica.ListaGaseosas == null)
             {
@@ -306,6 +327,7 @@ namespace Interfaz
             {
                 BaseDatosActualizador actualizador = new BaseDatosActualizador();
                 actualizador.ActualizarCrudBaseDatos(fabrica);
+
                 ActualizarVisor();
             });
 
@@ -389,6 +411,7 @@ namespace Interfaz
         private void btnAbrirBaseDatos_Click(object? sender, EventArgs e)
         {
             actualizarCrudBaseDatos();
+            baseDatosCargada = true; // Indicar que la base de datos ha sido cargada
             button2.Click -= btnAbrirBaseDatos_Click;
 
         }
