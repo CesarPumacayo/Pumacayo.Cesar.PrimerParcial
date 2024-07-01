@@ -230,7 +230,9 @@ namespace Interfaz
 
         }
 
-
+        /// <summary>
+        /// Evento para modificar segun el tipo de gaseosa (sprite , fanta , manaos) mediante un formulario específico.
+        /// </summary>
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!baseDatosCargada)
@@ -390,9 +392,9 @@ namespace Interfaz
                 try
                 {
                     AccesoBaseDatos.Conectar();
-                    string consulta = "DELETE FROM Tabla_Gaseosa WHERE precio = @NombreAEliminar";
+                    string consulta = "DELETE FROM Tabla_Gaseosa WHERE precio = @ElementoDelete";
                     SqlCommand cmd = new SqlCommand(consulta, AccesoBaseDatos.Conectar());
-                    cmd.Parameters.AddWithValue("@NombreAEliminar", precio);
+                    cmd.Parameters.AddWithValue("@ElementoDelete", precio);
                     cmd.ExecuteNonQuery();
                     GaseosaEliminadaEvent?.Invoke(precio.ToString());
                     MessageBox.Show("Dato eliminado");

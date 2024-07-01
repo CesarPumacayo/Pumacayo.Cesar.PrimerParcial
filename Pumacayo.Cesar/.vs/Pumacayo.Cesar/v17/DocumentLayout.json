@@ -3,15 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|c:\\users\\usuario\\onedrive\\escritorio\\nueva carpeta (2)\\pumacayo.cesar.primerparcial\\pumacayo.cesar\\interfaz\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+      "AbsoluteMoniker": "D:0:0:{64D4A119-CCD9-4FA0-8440-DACD11AC27C3}|Entidades\\Entidades.csproj|c:\\users\\usuario\\onedrive\\escritorio\\nueva carpeta (2)\\pumacayo.cesar.primerparcial\\pumacayo.cesar\\entidades\\accesobasedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64D4A119-CCD9-4FA0-8440-DACD11AC27C3}|Entidades\\Entidades.csproj|solutionrelative:entidades\\accesobasedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|c:\\users\\usuario\\onedrive\\escritorio\\nueva carpeta (2)\\pumacayo.cesar.primerparcial\\pumacayo.cesar\\interfaz\\frmcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\interfaz\\frmcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\frmcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64D4A119-CCD9-4FA0-8440-DACD11AC27C3}|Entidades\\Entidades.csproj|c:\\users\\usuario\\onedrive\\escritorio\\nueva carpeta (2)\\pumacayo.cesar.primerparcial\\pumacayo.cesar\\entidades\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\interfaz\\frmcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\frmcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|c:\\users\\usuario\\onedrive\\escritorio\\nueva carpeta (2)\\pumacayo.cesar.primerparcial\\pumacayo.cesar\\interfaz\\formsgaseosas\\frmgaseosa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\formsgaseosas\\frmgaseosa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\interfaz\\formsgaseosas\\frmfanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\formsgaseosas\\frmfanta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64D4A119-CCD9-4FA0-8440-DACD11AC27C3}|Entidades\\Entidades.csproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\entidades\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
       "RelativeMoniker": "D:0:0:{64D4A119-CCD9-4FA0-8440-DACD11AC27C3}|Entidades\\Entidades.csproj|solutionrelative:entidades\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     },
     {
@@ -19,12 +31,8 @@
       "RelativeMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\mock_data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|c:\\users\\usuario\\onedrive\\escritorio\\nueva carpeta (2)\\pumacayo.cesar.primerparcial\\pumacayo.cesar\\interfaz\\registro.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\interfaz\\registro.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\registro.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|c:\\users\\usuario\\onedrive\\escritorio\\nueva carpeta (2)\\pumacayo.cesar.primerparcial\\pumacayo.cesar\\interfaz\\frmcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|solutionrelative:interfaz\\frmcrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8477314C-0E0F-43B1-AEC3-6DA748C86B57}|Interfaz\\Interfaz.csproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\interfaz\\formsgaseosas\\frmmanaos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -143,30 +151,55 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClassDiagram1.cd",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\ClassDiagram1.cd",
-              "RelativeDocumentMoniker": "Interfaz\\ClassDiagram1.cd",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\ClassDiagram1.cd",
-              "RelativeToolTip": "Interfaz\\ClassDiagram1.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-07-01T19:28:12.813Z",
+              "Title": "AccesoBaseDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\AccesoBaseDatos.cs",
+              "RelativeDocumentMoniker": "Entidades\\AccesoBaseDatos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\AccesoBaseDatos.cs",
+              "RelativeToolTip": "Entidades\\AccesoBaseDatos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T20:54:28.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "FrmGaseosa.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmGaseosa.cs",
+              "RelativeDocumentMoniker": "Interfaz\\FormsGaseosas\\FrmGaseosa.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmGaseosa.cs",
+              "RelativeToolTip": "Interfaz\\FormsGaseosas\\FrmGaseosa.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwDMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T19:42:37.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmFanta.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmFanta.cs",
+              "RelativeDocumentMoniker": "Interfaz\\FormsGaseosas\\FrmFanta.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmFanta.cs",
+              "RelativeToolTip": "Interfaz\\FormsGaseosas\\FrmFanta.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T19:42:28.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "Entidades\\ClassDiagram1.cd",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\ClassDiagram1.cd",
               "RelativeToolTip": "Entidades\\ClassDiagram1.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-07-01T19:27:26.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T19:27:26.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Registro.xml",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Registro.xml",
               "RelativeDocumentMoniker": "Interfaz\\Registro.xml",
@@ -174,8 +207,7 @@
               "RelativeToolTip": "Interfaz\\Registro.xml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-07-01T19:25:33.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T19:25:33.477Z"
             },
             {
               "$type": "Document",
@@ -185,14 +217,14 @@
               "RelativeDocumentMoniker": "Interfaz\\FrmCRUD.cs",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FrmCRUD.cs",
               "RelativeToolTip": "Interfaz\\FrmCRUD.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAIAAAA",
+              "ViewState": "AQIAAG4BAAAAAAAAAAAqwPMBAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-01T19:00:42.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "FrmCRUD.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FrmCRUD.cs",
               "RelativeDocumentMoniker": "Interfaz\\FrmCRUD.cs",
@@ -204,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "FrmSprite.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmSprite.cs",
               "RelativeDocumentMoniker": "Interfaz\\FormsGaseosas\\FrmSprite.cs",
@@ -212,12 +244,11 @@
               "RelativeToolTip": "Interfaz\\FormsGaseosas\\FrmSprite.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAA1wIEAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T04:28:29.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-29T04:28:29.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Program.cs",
               "RelativeDocumentMoniker": "Interfaz\\Program.cs",
@@ -225,12 +256,11 @@
               "RelativeToolTip": "Interfaz\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T03:45:51.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T03:45:51.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MiClaseException.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\MiClaseException.cs",
               "RelativeDocumentMoniker": "Interfaz\\MiClaseException.cs",
@@ -238,12 +268,11 @@
               "RelativeToolTip": "Interfaz\\MiClaseException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T17:13:48.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T17:13:48.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "IGaseosa.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\IGaseosa.cs",
               "RelativeDocumentMoniker": "Entidades\\IGaseosa.cs",
@@ -251,12 +280,11 @@
               "RelativeToolTip": "Entidades\\IGaseosa.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T16:35:02.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-29T16:35:02.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Usuario.cs",
               "RelativeDocumentMoniker": "Interfaz\\Usuario.cs",
@@ -264,12 +292,11 @@
               "RelativeToolTip": "Interfaz\\Usuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T13:26:42.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T13:26:42.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Gaseosas.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Gaseosas.cs",
               "RelativeDocumentMoniker": "Entidades\\Gaseosas.cs",
@@ -277,12 +304,11 @@
               "RelativeToolTip": "Entidades\\Gaseosas.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAAAEwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T16:51:05.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T16:51:05.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MOCK_DATA.json",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\MOCK_DATA.json",
               "RelativeDocumentMoniker": "Interfaz\\MOCK_DATA.json",
@@ -290,12 +316,11 @@
               "RelativeToolTip": "Interfaz\\MOCK_DATA.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-28T17:38:41.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T17:38:41.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ICrudBD.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\ICrudBD.cs",
               "RelativeDocumentMoniker": "Interfaz\\ICrudBD.cs",
@@ -303,24 +328,22 @@
               "RelativeToolTip": "Interfaz\\ICrudBD.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T00:22:46.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T00:22:46.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmManaos.cs [Dise\u00F1o]",
+              "DocumentIndex": 8,
+              "Title": "FrmManaos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmManaos.cs",
               "RelativeDocumentMoniker": "Interfaz\\FormsGaseosas\\FrmManaos.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmManaos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Interfaz\\FormsGaseosas\\FrmManaos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmManaos.cs [Design]",
+              "RelativeToolTip": "Interfaz\\FormsGaseosas\\FrmManaos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T03:44:47.476Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-28T03:44:47.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "IDatosUsuario.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\IDatosUsuario.cs",
               "RelativeDocumentMoniker": "Interfaz\\IDatosUsuario.cs",
@@ -328,12 +351,11 @@
               "RelativeToolTip": "Interfaz\\IDatosUsuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T17:04:20.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T17:04:20.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "InventarioGaseosas.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\InventarioGaseosas.cs",
               "RelativeDocumentMoniker": "Entidades\\InventarioGaseosas.cs",
@@ -341,12 +363,11 @@
               "RelativeToolTip": "Entidades\\InventarioGaseosas.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAABoAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T17:03:51.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T17:03:51.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "FrmSesiones.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FrmSesiones.cs",
               "RelativeDocumentMoniker": "Interfaz\\FrmSesiones.cs",
@@ -354,12 +375,11 @@
               "RelativeToolTip": "Interfaz\\FrmSesiones.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAgwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T04:20:00.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T04:20:00.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Manaos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Manaos.cs",
               "RelativeDocumentMoniker": "Entidades\\Manaos.cs",
@@ -367,12 +387,11 @@
               "RelativeToolTip": "Entidades\\Manaos.cs",
               "ViewState": "AQIAAFUAAAAAAAAAAAAqwHsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T03:00:36.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T03:00:36.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Sprite.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Sprite.cs",
               "RelativeDocumentMoniker": "Entidades\\Sprite.cs",
@@ -380,12 +399,11 @@
               "RelativeToolTip": "Entidades\\Sprite.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAHwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T20:28:00.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T20:28:00.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "usuarios.log",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\usuarios.log",
               "RelativeDocumentMoniker": "Interfaz\\usuarios.log",
@@ -397,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Settings.settings",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Properties\\Settings.settings",
               "RelativeDocumentMoniker": "Interfaz\\Properties\\Settings.settings",
@@ -408,7 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Interfaz\\Properties\\Resources.resx",
@@ -419,19 +437,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Interfaz",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj",
               "RelativeDocumentMoniker": "Interfaz\\Interfaz.csproj",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Interfaz.csproj",
               "RelativeToolTip": "Interfaz\\Interfaz.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-26T17:42:43.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T17:42:43.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Entidades\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Entidades\\Properties\\Resources.resx",
@@ -442,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "TestUnitario.csproj",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\TestUnitario\\TestUnitario.csproj",
               "RelativeDocumentMoniker": "TestUnitario\\TestUnitario.csproj",
@@ -450,12 +467,11 @@
               "RelativeToolTip": "TestUnitario\\TestUnitario.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-29T03:51:51.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-29T03:51:51.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Resources.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\Properties\\Resources.Designer.cs",
               "RelativeDocumentMoniker": "Interfaz\\Properties\\Resources.Designer.cs",
@@ -463,48 +479,44 @@
               "RelativeToolTip": "Interfaz\\Properties\\Resources.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T13:32:19.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-26T13:32:19.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "FrmSesiones.cs [Design]",
+              "DocumentIndex": 28,
+              "Title": "FrmSesiones.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FrmSesiones.cs",
               "RelativeDocumentMoniker": "Interfaz\\FrmSesiones.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FrmSesiones.cs [Design]",
-              "RelativeToolTip": "Interfaz\\FrmSesiones.cs [Design]",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FrmSesiones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Interfaz\\FrmSesiones.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T04:19:03.363Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-28T04:19:03.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "FrmSprite.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmSprite.cs",
               "RelativeDocumentMoniker": "Interfaz\\FormsGaseosas\\FrmSprite.cs",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmSprite.cs [Design]",
               "RelativeToolTip": "Interfaz\\FormsGaseosas\\FrmSprite.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T04:59:26.368Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-28T04:59:26.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "TestUnitario",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\TestUnitario\\TestUnitario.csproj",
               "RelativeDocumentMoniker": "TestUnitario\\TestUnitario.csproj",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\TestUnitario\\TestUnitario.csproj",
               "RelativeToolTip": "TestUnitario\\TestUnitario.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-21T22:53:41.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T22:53:41.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "TestUnitario.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\TestUnitario\\obj\\Debug\\net6.0\\TestUnitario.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "TestUnitario\\obj\\Debug\\net6.0\\TestUnitario.AssemblyInfo.cs",
@@ -512,12 +524,11 @@
               "RelativeToolTip": "TestUnitario\\obj\\Debug\\net6.0\\TestUnitario.AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T22:51:51.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T22:51:51.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "FrmManaos.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmManaos.Designer.cs",
               "RelativeDocumentMoniker": "Interfaz\\FormsGaseosas\\FrmManaos.Designer.cs",
@@ -525,12 +536,11 @@
               "RelativeToolTip": "Interfaz\\FormsGaseosas\\FrmManaos.Designer.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAowFsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T05:31:24.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T05:31:24.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "FrmSprite.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Nueva carpeta (2)\\Pumacayo.Cesar.PrimerParcial\\Pumacayo.Cesar\\Interfaz\\FormsGaseosas\\FrmSprite.Designer.cs",
               "RelativeDocumentMoniker": "Interfaz\\FormsGaseosas\\FrmSprite.Designer.cs",
@@ -538,8 +548,7 @@
               "RelativeToolTip": "Interfaz\\FormsGaseosas\\FrmSprite.Designer.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAwwFoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T05:31:37.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T05:31:37.868Z"
             }
           ]
         },
